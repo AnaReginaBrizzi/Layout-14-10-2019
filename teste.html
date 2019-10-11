@@ -39,67 +39,128 @@
 
     <div class="tab-pane fade show active" id="nav-entidade" role="tabpanel" aria-labelledby="nav-home-tab">
 
-     <table class="table table-striped text-center">
-      <thead>
+      <div class="row d-flex justify-content-center">
+       <table class="table table-striped text-center border">
+        <thead>
+          <tr>
+            <th colspan="4" scope="col">Entidade teste desenvolvedor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th colspan="4">Último horário faldado: 09:00</th>
+          </tr>
+          <tr>
+            <th>Nº de telefone:</th>
+            <td>
+              <div>
+                <input type="text" class="form-control mx-sm-3" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="">
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-lg btn-outline-warning "><i class="fas fa-edit"></i></button>
+            </td>
+            <td>
+              <button type="button" class="btn btn-outline-success btn-lg"><i class="fas fa-plus"></i></button>
+
+            </td>
+          </tr>
+          <tr>
+            <th>Data de retorno:</th>
+            <td>
+              <div>
+               <input type="text" class="form-control mx-sm-3" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="">
+             </div>
+           </td>
+           <td>
+            <form>
+              <div class="form-row">
+                <div class="form-group mx-sm-3">
+                  <select id="inputState" class="form-control">
+                    <option selected>07:00</option>
+                    <option>07:30</option>
+                    <option>08:00</option>
+                    <option>08:30</option>
+                    <option>09:00</option>
+                    <option>09:30</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </td>
+          <td>
+
+          </td>
+        </tr>    
+      </tbody>
+    </table>
+    <button type="button" style="width: 100%" class="btn btn-info">Validar retorno</button> 
+
+    <table class="table mt-5">
+      <thead class="thead-light">
         <tr>
-          <th colspan="4" scope="col">Entidade teste desenvolvedor</th>
+          <th scope="col">1 Ano</th>
+          <th scope="col">6 Meses</th>
+          <th scope="col">3 Meses</th>
+          <th scope="col">No mês</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th colspan="4">Último horário faldado: 09:00</th>
+          <th>0</th>
+          <th>4</th>
+          <th>22</th>
+          <th>3</th>
         </tr>
         <tr>
-          <th>Nº de telefone:</th>
-          <td>
-            <div class="row">
-              <div class="col-md-4">
-                <input type="text" class="form-control mx-sm-3" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="">
-              </div>
-            </div>
-          </td>
-          <td>
-            <button class="btn btn-lg border-secondary"><i class="fas fa-edit"></i></button>
-          </td>
-          <td>
-            <button class="btn btn-lg border-secondary"><i class="fas fa-plus"></i></button>
-          </td>
+          <th>2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+
+        <!--- me deleta -->
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
         </tr>
         <tr>
-          <th rowspan="2">Data de retorno:</th>
-          <td colspan="2">
-            <div class="row">
-              <div class="col-md-4">
-               <input type="text" class="form-control mx-sm-3" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="">
-             </div>
-           </div>
-         </td>
-       </tr>
-       <tr>  
-        <td>
-          <form>
-            <div class="form-row">
-              <div class="form-group mx-sm-3">
-                <select id="inputState" class="form-control">
-                  <option selected>07:00</option>
-                  <option>07:30</option>
-                  <option>08:00</option>
-                  <option>08:30</option>
-                  <option>09:00</option>
-                  <option>09:30</option>
-                </select>
-              </div>
-            </div>
-          </form>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <button type="button" style="width: 100%" class="btn btn-info">Validar retorno</button> 
-        </td>
-      </tr>
-    </tbody>
-  </table>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
 </div>
 
 
