@@ -1,127 +1,160 @@
-<!doctype html>
-<html lang="en">
+<div class="container p-1"><!--TUDO-->
+  <!DOCTYPE html>
+  <html lang="pt-br">
   <head>
-    <!-- Required meta tags -->
+    <title>layout</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap 4 online -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-    <!-- CSS pessoal-->
-    <link rel="stylesheet" href="estilos.css">
-
-    <!--Font Awesome -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- css_pessoal -->
+    <link rel="stylesheet" href="css/css_pessoal.css">
 
 
+    <!-- Icone no topo da aba da pagina -->
+    <link rel="icon" href="img/Mirror.png">
 
-    <title>.:SouAmais - Sistema Online Unificado - Amais Terceiro Setor:.</title>
-    
-
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#">Entidade teste Desenvolvedor</a></li>
-  <li><a href="#">Analise cadastral</a></li>
-  <li><a href="#">Parcelas</a></li>
-  <li><a href="#">Analise de contribuinte</a></li>
-  <li><a href="#">Histórico de ações</a></li>
-  <li><a href="#">FAQ</a></li>
-</ul>
-
-<br><br>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 
 
-<center> <b> <table width="500" height="200" border="0" class="striped">
-  
- <tr> 
-    <th colspan="3" bgcolor="#A9E2F3"> 
-      <font color="#0B4C5F"><center><h3> Entidade teste Desenvolvedor </h3></center></font>
-    </th> 
-  </tr>
-  <tr>
-    <td colspan="3" bgcolor="#CEECF5">
-      <font color="#0B4C5F"><center> Ultimo horário faldado:</font> <b>xx:xx</b> </center>
-    </td>
-  </tr>
-  <tr>
-    <td bgcolor="#A9E2F3">
-      <center><font color="#0B4C5F"> Nº telefone: </center></font>
-    </td>
-    <td bgcolor="#A9E2F3"><font color="#0B4C5F"><center>xx-xxxxx-xxxx</center></font>
-    </td>
-    <td bgcolor="#A9E2F3">
-      <div class="btn-group" role="group" aria-label="Basic example"><center>
-        <button type="button" class="btn btn-outline-primary"><i class="fas fa-phone-square-alt">Trocar número</i></button>
-        <button type="button" class="btn btn-outline-info">Telefones adicionais</button></center>
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-entidade" role="tab" aria-controls="nav-home" aria-selected="true">Entidades teste Desenvolvedores</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-analise_cadastral" role="tab" aria-controls="nav-profile" aria-selected="false">Analise cadastral</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-parcelas" role="tab" aria-controls="nav-contact" aria-selected="false">Parcelas</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-analise_contrib" role="tab" aria-controls="nav-contact" aria-selected="false">Analise de contribuintes</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-historico" role="tab" aria-controls="nav-contact" aria-selected="false">Histórico de ações</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-faq" role="tab" aria-controls="nav-contact" aria-selected="false">FAQ</a>
       </div>
-    </td>
-  </tr>
-  <tr>
-    <td rowspan="3" bgcolor="#CEECF5"><font color="#0B4C5F"><center>Data de retorno: </center></font>
-    </td>
-    <td colspan="3">
-      <form class="form-horizontal">
-      <fieldset>
-      
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="txt_data_retorno"></label>  
-        <div class="col-md-4">
-          <input id="txt_data_retorno" name="txt_data_retorno" type="text" placeholder="xx/xx/xxxx" class="form-control input-md">
-        </div>
-      </div>
-      </form>  
-      </fieldset>   
-    </td>     
-    <td colspan="3"> 
-      <form class="form-horizontal">
-        <fieldset>
-<!-- Select Basic -->
-          <div class="form-group">
-            <label class="col-md-4 control-label" for="cbo_horario"></label>
-            <div class="col-md-4">
-              <select id="cbo_horario" name="cbo_horario" class="form-control">
-                <option value="1">07:00</option>
-                <option value="2">07:30</option>
-                <option value="3">08:00</option>
-                <option value="4">08:30</option>
-                <option value="5">09:00</option>
-                <option value="6">09:30</option>
-              </select>
+    </nav>
+
+
+
+    <div class="tab-pane fade show active" id="nav-entidade" role="tabpanel" aria-labelledby="nav-home-tab">
+
+     <table class="table table-striped text-center">
+      <thead>
+        <tr>
+          <th colspan="4" scope="col">Entidade teste desenvolvedor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th colspan="4">Último horário faldado: 09:00</th>
+        </tr>
+        <tr>
+          <th>Nº de telefone:</th>
+          <td>
+            <div class="row">
+              <div class="col-md-4">
+                <input type="text" class="form-control mx-sm-3" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="">
+              </div>
             </div>
-          </div>
-
-        </fieldset>
-      </form>
-
-    </td>
-  </tr>
-
-</table> </b> </center>
-
-
-<nav>
-  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-  </div>
-</nav>
-<div class="tab-content" id="nav-tabContent">
-  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          </td>
+          <td>
+            <button class="btn btn-lg border-secondary"><i class="fas fa-edit"></i></button>
+          </td>
+          <td>
+            <button class="btn btn-lg border-secondary"><i class="fas fa-plus"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">Data de retorno:</th>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-md-4">
+               <input type="text" class="form-control mx-sm-3" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="">
+             </div>
+           </div>
+         </td>
+       </tr>
+       <tr>  
+        <td>
+          <form>
+            <div class="form-row">
+              <div class="form-group mx-sm-3">
+                <select id="inputState" class="form-control">
+                  <option selected>07:00</option>
+                  <option>07:30</option>
+                  <option>08:00</option>
+                  <option>08:30</option>
+                  <option>09:00</option>
+                  <option>09:30</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="button" style="width: 100%" class="btn btn-info">Validar retorno</button> 
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+
+<!-- SEGUNDA ABA -->
+
+<div class="tab-pane fade" id="nav-analise_cadastral" role="tabpanel" aria-labelledby="nav-profile-tab">
+  <div class="row">
+
+
+
+  </div>
+</div>
+
+<div class="tab-pane fade" id="nav-parcelas" role="tabpanel" aria-labelledby="nav-contact-tab">
+  teste
+</div>
+
+<div class="tab-pane fade" id="nav-analise_contrib" role="tabpanel" aria-labelledby="nav-contact-tab">
+  OUTRO TESTE
+</div>
+
+<div class="tab-pane fade" id="nav-historico" role="tabpanel" aria-labelledby="nav-contact-tab">
+  OUTRO TESTE 2
+</div>
+
+<div class="tab-pane fade" id="nav-faq" role="tabpanel" aria-labelledby="nav-contact-tab">
+  OUTRO TESTE 3
+</div> 
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
