@@ -1,67 +1,99 @@
-<div class="container p-1"><!--TUDO-->
-  <!DOCTYPE html>
-  <html lang="pt-br">
-  <head>
-    <title>layout</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--TUDO-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>layout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap 4 online -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Bootstrap 4 online -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-    <!-- css_pessoal -->
-    <link rel="stylesheet" href="css/css_pessoal.css">
-
-
-    <!-- Icone no topo da aba da pagina -->
-    <link rel="icon" href="img/Mirror.png">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- css_pessoal -->
+  <link rel="stylesheet" href="css/css_pessoal.css">
 
 
+  <!-- Icone no topo da aba da pagina -->
+  <link rel="icon" href="img/Mirror.png">
 
-  </head>
-  <body>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <nav>
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-entidade" role="tab" aria-controls="nav-home" aria-selected="true">Entidades teste Desenvolvedores</a>
-        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-analise_cadastral" role="tab" aria-controls="nav-profile" aria-selected="false">Analise cadastral</a>
-        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-parcelas" role="tab" aria-controls="nav-contact" aria-selected="false">Parcelas</a>
-        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-analise_contrib" role="tab" aria-controls="nav-contact" aria-selected="false">Analise de contribuintes</a>
-        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-historico" role="tab" aria-controls="nav-contact" aria-selected="false">Histórico de ações</a>
-        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-faq" role="tab" aria-controls="nav-contact" aria-selected="false">FAQ</a>
-      </div>
-    </nav>
+  <style>
+    .TesteSumir{
+      display:none;
+      border: 1px solid red;
+    }
+    .BtnSumir:onclick .TesteSumir{
+      display:block;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container p-1">
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="ent_test-tab" data-toggle="tab" href="#ent_test" role="tab" aria-controls="ent_test" aria-selected="true">Entidade teste desenvolvedores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="analise_cadastral-tab" data-toggle="tab" href="#analise_cadastral" role="tab" aria-controls="analise_cadastral" aria-selected="false">Analise cadastral</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="parcelas-tab" data-toggle="tab" href="#parcelas" role="tab" aria-controls="parcelas" aria-selected="false">Parcelas</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent"><!--MyTabContent-->
 
 
+      <!--PRIMEIRA ABA-->
+      <div class="tab-pane fade show active" id="ent_test" role="tabpanel" aria-labelledby="ent_test-tab">
+        <div class="row d-flex justify-content-center">
+         <table class="table table-striped text-center border">
+          <thead>
+            <tr>
+              <th colspan="4" scope="col">Entidade teste desenvolvedor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th colspan="4">Último horário faldado: 09:00</th>
+            </tr>
+            <tr>
+              <th>Nº de telefone:</th>
+              <td>
+                <p>(88)88888-8888 </p>
+              </td>
+              <td>
+                <div>
+                  <input type="text" class="form-control mx-sm-3">
+                </div>
 
-    <div class="tab-pane fade show active" id="nav-entidade" role="tabpanel" aria-labelledby="nav-home-tab">
+              </td>
+              <td>
+                <form>
+                  <div class="form-row">
+                    <div  class="mr-1" >
+                      <button type="button" class="btn btn-outline-success btn-lg">
+                        <i class="fab fa-whatsapp"></i>
+                      </button>
+                    </div>
 
-      <div class="row d-flex justify-content-center">
-       <table class="table table-striped text-center border">
-        <thead>
-          <tr>
-            <th colspan="4" scope="col">Entidade teste desenvolvedor</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th colspan="4">Último horário faldado: 09:00</th>
-          </tr>
-          <tr>
-            <th>Nº de telefone:</th>
-            <td>
-              <div>
-                <input type="text" class="form-control mx-sm-3" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="">
-              </div>
-            </td>
-            <td>
-              <button type="button" class="btn btn-lg btn-outline-warning "><i class="fas fa-edit"></i></button>
-            </td>
-            <td>
-              <button type="button" class="btn btn-outline-success btn-lg"><i class="fas fa-plus"></i></button>
+                    <div  class="mr-1" >
+                      <button type="button" class="btn btn-lg btn-outline-warning ">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                    </div>
+
+                    <div  class="mr-1" >
+                     <button type="button" class="btn btn-outline-success btn-lg">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </form>
 
             </td>
           </tr>
@@ -69,7 +101,7 @@
             <th>Data de retorno:</th>
             <td>
               <div>
-               <input type="text" class="form-control mx-sm-3" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="">
+               <input type="text" class="form-control mx-sm-3">
              </div>
            </td>
            <td>
@@ -96,7 +128,7 @@
     </table>
     <button type="button" style="width: 100%" class="btn btn-info">Validar retorno</button> 
 
-    <table class="table mt-5">
+    <table class="table mt-5 border">
       <thead class="thead-light">
         <tr>
           <th scope="col">1 Ano</th>
@@ -107,58 +139,211 @@
       </thead>
       <tbody>
         <tr>
-          <th>0</th>
-          <th>4</th>
-          <th>22</th>
-          <th>3</th>
+          <th>NA</th>
+          <th>AG</th>
+          <th>NC</th>
+          <th>C</th>
         </tr>
         <tr>
-          <th>2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-
-        <!--- me deleta -->
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+          <td>0</td>
+          <td>4</td>
+          <td>22</td>
+          <td>3</td>
         </tr>
       </tbody>
     </table>
+  </div>
+</div>
+<!--/PRIMEIRA ABA-->
 
-    <table class="table">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </table>
+<div class="tab-pane fade" id="analise_cadastral" role="tabpanel" aria-labelledby="analise_cadastral-tab">
+
+  <form class="form-horizontal">
+    <div class="row">
+      <div class="col-md-6">
+        <fieldset>
+
+          <!-- Form Name -->
+          <legend>Analise cadastral</legend>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txt_nome">Nome:</label>  
+            <div class="col-md-5">
+              <input id="txt_nome" name="txt_nome" type="text" placeholder="Insira seu nome" class="form-control input-md">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txt_nascimento">Data de nascimento</label>  
+            <div class="col-md-4">
+              <input id="txt_nascimento" name="txt_nascimento" type="text" placeholder="Insira sua data de nascimento" class="form-control input-md">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txt_email">E-mail:</label>  
+            <div class="col-md-5">
+              <input id="txt_email" name="txt_email" type="text" placeholder="Insira seu e-mail" class="form-control input-md">
+
+            </div>
+          </div>
+
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="cbo_sexo">Sexo:</label>
+            <div class="col-md-4">
+              <select id="cbo_sexo" name="cbo_sexo" class="form-control">
+                <option value="1">Masculino</option>
+                <option value="2">Feminino</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="cbo_tipo">Tipo de pessoa:</label>
+            <div class="col-md-4">
+              <select id="cbo_tipo" name="cbo_tipo" class="form-control">
+                <option value="1">Física</option>
+                <option value="2">Jurídica</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txt_cpf">CPF:</label>  
+            <div class="col-md-4">
+              <input id="txt_cpf" name="txt_cpf" type="text" placeholder="Insira seu CPF" class="form-control input-md">
+
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="col-md-6">
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="cbo_logadouro">Logadouro:</label>
+            <div class="col-md-2">
+              <select id="cbo_logadouro" name="cbo_logadouro" class="form-control">
+                <option value="1">Av</option>
+                <option value="2">Beco</option>
+                <option value="3">Est</option>
+                <option value="4">Rua</option>
+                <option value="5">Trav</option>
+                <option value="6">Out</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txt_endereco">Endereço:</label>  
+            <div class="col-md-4">
+              <input id="txt_endereco" name="txt_endereco" type="text" placeholder="Insira seu endereço" class="form-control input-md">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txt_ncasa">Nº residência:</label>  
+            <div class="col-md-4">
+              <input id="txt_ncasa" name="txt_ncasa" type="text" placeholder="Insira o nº da residência" class="form-control input-md">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txt_bairro">Bairro:</label>  
+            <div class="col-md-4">
+              <input id="txt_bairro" name="txt_bairro" type="text" placeholder="Insira seu bairro" class="form-control input-md">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txt_cep">CEP:</label>  
+            <div class="col-md-4">
+              <input id="txt_cep" name="txt_cep" type="text" placeholder="Insira o CEP (sem traços)" class="form-control input-md">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txt_complemento">Complemento:</label>  
+            <div class="col-md-4">
+              <input id="txt_complemento" name="txt_complemento" type="text" placeholder="Insira um complemento" class="form-control input-md">
+
+            </div>
+          </div>
+
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="cbo_uf">UF:</label>
+            <div class="col-md-4">
+              <select id="cbo_uf" name="cbo_uf" class="form-control">
+                <option value="1">Acre (AC)</option>
+                <option value="2">Alagoas (AL)</option>
+                <option value="3">Amapá (AP)</option>
+                <option value="4">Amazonas (AM)</option>
+                <option value="5">Bahia (BA)</option>
+                <option value="6">Ceará (CE)</option>
+                <option value="7">Distrito Federal (DF)</option>
+                <option value="8">Espírito Santo (ES)</option>
+                <option value="9">Goiás (GO)</option>
+                <option value="10">Maranhão (MA)</option>
+                <option value="11">Mato Grosso (MT)</option>
+                <option value="12">Mato Grosso do Sul (MS)</option>
+                <option value="13">Minas Gerais (MG)</option>
+                <option value="14">Pará (PA)</option>
+                <option value="15">Paraíba (PB)</option>
+                <option value="16">Paraná (PR)</option>
+                <option value="17">Pernambuco (PE)</option>
+                <option value="18">Piauí (PI)</option>
+                <option value="19">Rio de Janeiro (RJ)</option>
+                <option value="20">Rio Grande do Norte (RN)</option>
+                <option value="21">Rio Grande do Sul (RS)</option>
+                <option value="22">Rondônia (RO)</option>
+                <option value="23">Roraima (RR)</option>
+                <option value="24">Santa Catarina (SC)</option>
+                <option value="25">São Paulo (SP)</option>
+                <option value="26">Sergipe (SE)</option>
+                <option value="27">Tocantins (TO)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="cbo_cidade">Cidade:</label>
+            <div class="col-md-4">
+              <select id="cbo_cidade" name="cbo_cidade" class="form-control">
+                <option value="1">Jaú</option>
+                <option value="2">Barra Bonita</option>
+                <option value="3">Bauru</option>
+              </select>
+            </div>
+          </div>
+              
+              <div>
+                <button class="BtnSumir btn btn-outline-dark">BTN</button>
+                <p class="TesteSumir">TExTO que deve aparecer e sumir</p>
+              </div>  
+
+        </div>
+      </fieldset>
+    </form>
 
   </div>
 </div>
@@ -166,39 +351,23 @@
 
 
 
-
-<!-- SEGUNDA ABA -->
-
-<div class="tab-pane fade" id="nav-analise_cadastral" role="tabpanel" aria-labelledby="nav-profile-tab">
-  <div class="row">
-
-
+<div class="col-md-6 bg-danger">
+  <div class="">
 
   </div>
-</div>
-
-<div class="tab-pane fade" id="nav-parcelas" role="tabpanel" aria-labelledby="nav-contact-tab">
-  teste
-</div>
-
-<div class="tab-pane fade" id="nav-analise_contrib" role="tabpanel" aria-labelledby="nav-contact-tab">
-  OUTRO TESTE
-</div>
-
-<div class="tab-pane fade" id="nav-historico" role="tabpanel" aria-labelledby="nav-contact-tab">
-  OUTRO TESTE 2
-</div>
-
-<div class="tab-pane fade" id="nav-faq" role="tabpanel" aria-labelledby="nav-contact-tab">
-  OUTRO TESTE 3
-</div> 
-
-
-
 
 </div>
 
 
+</div>
+
+</div>
+
+<div class="tab-pane fade" id="parcelas" role="tabpanel" aria-labelledby="parcelas-tab">
+  ME INTERNA
+</div>
+
+</div><!--/MyTabContent-->
 
 
 
@@ -212,10 +381,12 @@
 
 
 
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>
