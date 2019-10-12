@@ -32,7 +32,7 @@
 
 </head>
 <body>
-  <div class="container p-1">
+  <div class="container p-1"><!--CONTAINER-->
 
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item">
@@ -49,294 +49,336 @@
 
 
       <!--PRIMEIRA ABA-->
-      <div class="tab-pane fade show active" id="ent_test" role="tabpanel" aria-labelledby="ent_test-tab">
-        <div class="row d-flex justify-content-center">
-         <table class="table table-striped text-center border">
-          <thead>
-            <tr>
-              <th colspan="4" scope="col">Entidade teste desenvolvedor</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th colspan="4">Último horário faldado: 09:00</th>
-            </tr>
-            <tr>
-              <th>Nº de telefone:</th>
-              <td>
-                <p>(88)88888-8888 </p>
-              </td>
-              <td>
-                <div>
-                  <input type="text" class="form-control mx-sm-3">
-                </div>
+    <div class="tab-pane fade show active" id="ent_test" role="tabpanel" aria-labelledby="ent_test-tab">
+      <div class="row d-flex justify-content-center">
+          <table class="table table-striped text-center border">
+                <thead>
+                  <tr>
+                    <th colspan="4" scope="col">Entidade teste desenvolvedor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th colspan="4">Último horário faldado: 09:00</th>
+                  </tr>
+                  <tr>
+                    <th>Nº de telefone:</th>
+                    <td>
+                      <p>(88)88888-8888 </p>
+                    </td>
+                    <td>
+                      <div>
+                        <input type="text" class="form-control mx-sm-3">
+                      </div>
 
-              </td>
-              <td>
-                <form>
-                  <div class="form-row">
-                    <div  class="mr-1" >
-                      <button type="button" class="btn btn-outline-success btn-lg">
-                        <i class="fab fa-whatsapp"></i>
-                      </button>
-                    </div>
+                    </td>
+                    <td>
+                      <form>
+                        <div class="form-row">
 
-                    <div  class="mr-1" >
-                      <button type="button" class="btn btn-lg btn-outline-warning ">
-                        <i class="fas fa-edit"></i>
-                      </button>
-                    </div>
+                          <div  class="mr-1" >
+                            <button type="button" class="btn btn-outline-success">
+                              <i class="fab fa-whatsapp"></i>
+                            </button>
+                          </div>
 
-                    <div  class="mr-1" >
-                     <button type="button" class="btn btn-outline-success btn-lg">
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
+                          <div  class="mr-1" >
+                            <button type="button" class="btn btn-outline-warning ">
+                              <i class="fas fa-pen-square fa-lg"></i>
+                            </button>
+                          </div>
 
-                </div>
-              </form>
+                          <div  class="mr-1" >
+                            <button type="button" class="btn btn-outline-success">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
 
-            </td>
-          </tr>
-          <tr>
-            <th>Data de retorno:</th>
-            <td>
-              <div>
-               <input type="text" class="form-control mx-sm-3">
-             </div>
-           </td>
-           <td>
-            <form>
-              <div class="form-row">
-                <div class="form-group mx-sm-3">
-                  <select id="inputState" class="form-control">
-                    <option selected>07:00</option>
-                    <option>07:30</option>
-                    <option>08:00</option>
-                    <option>08:30</option>
-                    <option>09:00</option>
-                    <option>09:30</option>
-                  </select>
-                </div>
-              </div>
-            </form>
-          </td>
-          <td>
+                      </div>
+                    </form>
 
-          </td>
-        </tr>    
-      </tbody>
-    </table>
-    <button type="button" style="width: 100%" class="btn btn-info">Validar retorno</button> 
+                  </td>
+                  </tr>
+                  <tr>
+                    <th>Data de retorno:</th>
+                    <td>
+                      <div>
+                       <input type="text" class="form-control mx-sm-3">
+                     </div>
+                   </td>
+                   <td>
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group mx-sm-3">
+                          <select id="inputState" class="form-control">
+                            <option selected>07:00</option>
+                            <option>07:30</option>
+                            <option>08:00</option>
+                            <option>08:30</option>
+                            <option>09:00</option>
+                            <option>09:30</option>
+                          </select>
+                        </div>
+                      </div>
+                    </form>
+                  </td>
+                  <td>
+                    <!-- TD VAZIO para PREENCHER a tabela-->
+                  </td>
+                </tr>    
+              </tbody>
+          </table>
+          <button type="button" style="width: 100%" class="btn btn-info">Validar retorno</button> 
 
-    <table class="table mt-5 border">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col">1 Ano</th>
-          <th scope="col">6 Meses</th>
-          <th scope="col">3 Meses</th>
-          <th scope="col">No mês</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>NA</th>
-          <th>AG</th>
-          <th>NC</th>
-          <th>C</th>
-        </tr>
-        <tr>
-          <td>0</td>
-          <td>4</td>
-          <td>22</td>
-          <td>3</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+          <table class="table mt-5 border">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">1 Ano</th>
+                <th scope="col">6 Meses</th>
+                <th scope="col">3 Meses</th>
+                <th scope="col">No mês</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>NA</th>
+                <th>AG</th>
+                <th>NC</th>
+                <th>C</th>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>4</td>
+                <td>22</td>
+                <td>3</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
 <!--/PRIMEIRA ABA-->
+
+
 <!-- SEGUNDA ABA -->
-
 <div class="tab-pane fade" id="analise_cadastral" role="tabpanel" aria-labelledby="analise_cadastral-tab">
-
-  <form class="form-horizontal">
-    <div class="row">
+  <form class="form-horizontal"><!--FORM-->
+    <div class="row"><!--GRID -->
       <div class="col-md-6">
-        <fieldset>
+        <!--FIELDSET-->
+        <fieldset><legend>Analise cadastral</legend>
+          <div class="form-row"><!--FORM_ROW-->
+            <div class="form-group col-md-6">
+              <label for="txt_nome">Nome:</label>
+              <input name="txt_nome" type="text" class="form-control" id="txt_nome" placeholder="Insira seu nome">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="txt_nascimento">Data de nascimento:</label>
+              <input name="txt_nascimento" type="text" class="form-control" id="txt_nascimento" placeholder="Insira sua data de nascimento">
+            </div>
+          </div><!--/FORM_ROW-->
 
-          <!-- Form Name -->
-          <legend>Analise cadastral</legend>
+          <div class="form-row"><!--FORM_ROW_2-->
+            <div class="form-group col-md-6">
+              <label for="txt_email">E-mail:</label>
+              <input name="txt_email" type="text" class="form-control" id="txt_email" placeholder="Insira seu e-mail">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="txt_cpf">CPF:</label>
+              <input name="txt_cpf" type="text" class="form-control" id="txt_cpf" placeholder="Insira seu CPF">
+            </div>
+          </div><!--/FORM_ROW_2-->
 
-
-          <!-- TESTE -->
-          
-          <form>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="txt_nome">Nome:</label>
-                <input name="txt_nome" type="text" class="form-control" id="txt_nome" placeholder="Insira seu nome">
-              </div>
-
-              <div class="form-group col-md-6">
-                <label for="txt_nascimento">Data de nascimento:</label>
-                <input name="txt_nascimento" type="text" class="form-control" id="txt_nascimento" placeholder="Insira sua data de nascimento">
-              </div>
+          <div class="form-row"><!--FORM_ROW_3-->
+            <div class="form-group col-md-3">
+              <label for="cbo_sexo">Sexo:</label>
+              <select id="cbo_sexo" class="form-control">
+                <option value="1" selected>Masculino</option>
+                <option value="2">Feminino</option>
+              </select>
             </div>
 
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="txt_email">E-mail:</label>
-                <input name="txt_email" type="text" class="form-control" id="txt_email" placeholder="Insira seu e-mail">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="txt_cpf">CPF:</label>
-                <input name="txt_cpf" type="text" class="form-control" id="txt_cpf" placeholder="Insira seu CPF">
-              </div>
+            <div class="form-group col-md-3">
+              <label for="cbo_tipo">Pessoa:</label>
+              <select id="cbo_tipo" class="form-control">
+                <option value="1" selected>Física</option>
+                <option value="2">Jurídica</option>
+              </select>
             </div>
-
-            <div class="form-row">
-              <div class="form-group col-md-3">
-                <label for="cbo_sexo">Sexo:</label>
-                <select id="cbo_sexo" class="form-control">
-                  <option value="1" selected>Masculino</option>
-                  <option value="2">Feminino</option>
-                </select>
-              </div>
-
-              <div class="form-group col-md-3">
-                <label for="cbo_tipo">Tipo de pessoa:</label>
-                <select id="cbo_tipo" class="form-control">
-                  <option value="1" selected>Física</option>
-                  <option value="2">Jurídica</option>
-                </select>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="txt_endereco">Endereço:</label>
-                <input name="txt_endereco" type="text" class="form-control" id="txt_endereco" placeholder="Insira seu endereço">
-              </div>
+            <div class="form-group col-md-6">
+              <label for="txt_endereco">Endereço:</label>
+              <input name="txt_endereco" type="text" class="form-control" id="txt_endereco" placeholder="Insira seu endereço">
             </div>
+          </div><!--/FORM_ROW_3-->
 
-            <div class="form-row">
-              <div class="form-group col-md-3">
-                <label for="txt_nresidencia">Nº residência</label>
-                <input name="txt_nresidencia" type="text" class="form-control" id="txt_nresidencia" placeholder="Insira o nº da residência">
-              </div>
-              <div class="form-group col-md-2">
-                <label for="cbo_logadouro">Logadouro:</label>
-                <select name="cbo_logadouro" id="cbo_logadouro" class="form-control">
-                  <option value="1" selected="">Rua</option>
-                  <option value="2">Beco</option>
-                  <option value="3">Est</option>
-                  <option value="4">Av</option>
-                  <option value="5">Trav</option>
-                  <option value="6">Out</option>
-                </select>
-              </div>
-              <div class="form-group col-md-7">
-                <label for="txt_bairro">Bairro:</label>
-                <input name="txt_bairro" type="text" class="form-control" id="txt_cpf" placeholder="Insira o bairro">
-              </div>
+          <div class="form-row"><!--FORM_ROW_4-->
+            <div class="form-group col-md-3">
+              <label for="txt_nresidencia">Nº residência</label>
+              <input name="txt_nresidencia" type="text" class="form-control" id="txt_nresidencia" placeholder="Insira o nº da residência">
             </div>
-
-            <div class="form-row">
-              <div class="form-group col-md-3">
-                <label for="txt_cep">CEP:</label>
-                <input name="txt_cep" type="text" class="form-control" id="txt_cep" placeholder="Insira o CEP">
-              </div>
-              <div class="form-group col-md-5">
-                <label for="txt_complemento">Complemento:</label>
-                <input name="txt_complemento" type="text" class="form-control" id="txt_complemento" placeholder="Insira um complemento">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="cbo_cidade">Cidade:</label>
-                <select name="cbo_cidade" id="cbo_cidade" class="form-control">
-                  <option value="1" selected="">Jaú</option>
-                  <option value="2">Barra Bonita</option>
-                  <option value="3">Bauru</option>
-                </select>
-              </div>
+            <div class="form-group col-md-2">
+              <label for="cbo_logadouro">Logadouro:</label>
+              <select name="cbo_logadouro" id="cbo_logadouro" class="form-control">
+                <option value="1" selected="">Rua</option>
+                <option value="2">Beco</option>
+                <option value="3">Est</option>
+                <option value="4">Av</option>
+                <option value="5">Trav</option>
+                <option value="6">Out</option>
+              </select>
             </div>
-
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="cbo_uf">UF:</label>
-                <select name="cbo_uf" id="cbo_uf" class="form-control">
-                  <option value="1" selected="">Acre (AC)</option>
-                  <option value="2">Alagoas (AL)</option>
-                  <option value="3">Amapá (AP)</option>
-                  <option value="4">Amazonas (AM)</option>
-                  <option value="5">Bahia (BA)</option>
-                  <option value="6">Ceará (CE)</option>
-                  <option value="7">Distrito Federal (DF)</option>
-                  <option value="8">Espírito Santo (ES)</option>
-                  <option value="9">Goiás (GO)</option>
-                  <option value="10">Maranhão (MA)</option>
-                  <option value="11">Mato Grosso (MT)</option>
-                  <option value="12">Mato Grosso do Sul (MS)</option>
-                  <option value="13">Minas Gerais (MG)</option>
-                  <option value="14">Pará (PA)</option>
-                  <option value="15">Paraíba (PB)</option>
-                  <option value="16">Paraná (PR)</option>
-                  <option value="17">Pernambuco (PE)</option>
-                  <option value="18">Piauí (PI)</option>
-                  <option value="19">Rio de Janeiro (RJ)</option>
-                  <option value="20">Rio Grande do Norte (RN)</option>
-                  <option value="21">Rio Grande do Sul (RS)</option>
-                  <option value="22">Rondônia (RO)</option>
-                  <option value="23">Roraima (RR)</option>
-                  <option value="24">Santa Catarina (SC)</option>
-                  <option value="25">São Paulo (SP)</option>
-                  <option value="26">Sergipe (SE)</option>
-                  <option value="27">Tocantins (TO)</option>
-                </select>
-              </div>
-              <div class="col-md-4">
-                  <button type="button" class="btn btn-info btn-lg"><i class="fas fa-search"></i></button>
-                  <button type="button" class="btn btn-danger btn-lg"><i class="fas fa-times"></i></button>
-              </div>
+            <div class="form-group col-md-7">
+              <label for="txt_bairro">Bairro:</label>
+              <input name="txt_bairro" type="text" class="form-control" id="txt_cpf" placeholder="Insira o bairro">
             </div>
+          </div><!--/FORM_ROW_4-->
 
-            <div>
-              <button type="button" style="width: 100%" class="btn btn-primary"><i class="fas fa-check"></i><b>Analise cadastral realizada: 11/10/2019</b></button>
+          <div class="form-row"><!--FORM_ROW_5-->
+            <div class="form-group col-md-3">
+              <label for="txt_cep">CEP:</label>
+              <input name="txt_cep" type="text" class="form-control" id="txt_cep" placeholder="Insira o CEP">
             </div>
+            <div class="form-group col-md-5">
+              <label for="txt_complemento">Complemento:</label>
+              <input name="txt_complemento" type="text" class="form-control" id="txt_complemento" placeholder="Insira um complemento">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="cbo_cidade">Cidade:</label>
+              <select name="cbo_cidade" id="cbo_cidade" class="form-control">
+                <option value="1" selected="">Jaú</option>
+                <option value="2">Barra Bonita</option>
+                <option value="3">Bauru</option>
+              </select>
+            </div>
+          </div><!--FORM_ROW_6-->
 
-          </form>  
+          <div class="form-row"><!--FORM_ROW_7-->
+            <div class="form-group col-md-6">
+              <label for="cbo_uf">UF:</label>
+              <select name="cbo_uf" id="cbo_uf" class="form-control">
+                <option value="1" selected="">Acre (AC)</option>
+                <option value="2">Alagoas (AL)</option>
+                <option value="3">Amapá (AP)</option>
+                <option value="4">Amazonas (AM)</option>
+                <option value="5">Bahia (BA)</option>
+                <option value="6">Ceará (CE)</option>
+                <option value="7">Distrito Federal (DF)</option>
+                <option value="8">Espírito Santo (ES)</option>
+                <option value="9">Goiás (GO)</option>
+                <option value="10">Maranhão (MA)</option>
+                <option value="11">Mato Grosso (MT)</option>
+                <option value="12">Mato Grosso do Sul (MS)</option>
+                <option value="13">Minas Gerais (MG)</option>
+                <option value="14">Pará (PA)</option>
+                <option value="15">Paraíba (PB)</option>
+                <option value="16">Paraná (PR)</option>
+                <option value="17">Pernambuco (PE)</option>
+                <option value="18">Piauí (PI)</option>
+                <option value="19">Rio de Janeiro (RJ)</option>
+                <option value="20">Rio Grande do Norte (RN)</option>
+                <option value="21">Rio Grande do Sul (RS)</option>
+                <option value="22">Rondônia (RO)</option>
+                <option value="23">Roraima (RR)</option>
+                <option value="24">Santa Catarina (SC)</option>
+                <option value="25">São Paulo (SP)</option>
+                <option value="26">Sergipe (SE)</option>
+                <option value="27">Tocantins (TO)</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="btn btn-info btn-lg"><i class="fas fa-search"></i></button>
+              <button type="button" class="btn btn-danger btn-lg"><i class="fas fa-times"></i></button>
+            </div>
+          </div><!--/FORM_ROW_7-->
+
+          <div><!--BOTAO ANALISE CADASTRAL -->
+            <button type="button" style="width: 100%" class="btn btn-primary">
+              <i class="fas fa-check"></i><b>Analise cadastral realizada: 11/10/2019</b>
+            </button>
+          </div><!--/BOTAO ANALISE CADASTRAL -->
+
+        </fieldset>
+        <!--/FIELDSET-->
+      </div>
+      <!-- SEGUNDA DIV -->
+      <div class="col-md-6"><!--GRID 2-->
+        
+        <!-- FORM_ROW_1-->
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="txt_responsavel">Responsável:</label>
+              <input name="txt_responsavel" type="text" class="form-control" id="txt_responsavel" placeholder="Nome do responsável">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="cbo_mensageiro">Mensageiro:</label>
+              <select name="cbo_mensageiro" id="cbo_mensageiro" class="form-control">
+                <option value="1">Segundo-mTeste</option>
+                <option value="" disabled="">-----------------------------------</option>
+                <option value="2">Mensageiro Franca</option>
+                <option value="3">Mensageiro-Teste2</option>
+                <option value="4">mensageiroTesteNovo</option>
+                <option value="5">Segundo-mTeste</option>
+                <option value="6">TercMensTeste</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <button name="btn_verificar_mensageiro" type="button" class="btn btn-link">Verificar mensageiro:</button>
+            </div>
         </div>
-        <!-- /PRIMEIRA DIV -->
+        <!-- /FORM_ROW_1-->
 
-
-        <!-- SEGUNDA DIV -->
-        <div class="col-md-6">
-          
-
+      
+        <!-- FORM_ROW_2-->
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="txt_rota">Rota </label>
+            <input name="txt_rota" type="text" class="form-control" id="txt_rota" readonly="">
+          </div>
+          <div class="form-group col-md-2">
+            <button name="btn_alterar_rota" type="button" class="btn btn-link">Alterar rota </button>
+          </div>
+          <div class="form-group col-md-6">
+             <label for="cmb_obs_mensageiro">Observação (mensageiro):</label>
+             <textarea name="cmb_obs_mensageiro" class="form-control" id="cmb_obs_mensageiro" rows="3">Negociar Campanha Especial - Negociar Campanha Especial - Negociar Campanha Especial -Negociar Campanha Especial -a - (Transferiu para carteira mensageiro)</textarea>
+          </div>
         </div>
-      </fieldset>
-    </form>
+        <!-- /FORM_ROW_2 -->
 
-  </div>
+        <!-- FORM_ROW_3 -->
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="cmb_obs_operadora">Observação (operadora):</label>
+            <textarea name="cmb_obs_operadora" class="form-control" id="cmb_obs_operadora" rows="3"></textarea>
+          </div>
+            <div class="form-group col-md-4">
+              <label for="cbo_operadora">Operadora:</label>
+              <select id="cbo_operadora" class="form-control">
+                <option selected>Operadora 1</option>
+                <option>Operadora 2</option>
+                <option>Operadora 3</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="txt_turno">Turno:</label>
+              <input name="txt_turno" type="email" class="form-control" id="txt_turno" readonly>
+            </div>
+        </div>
+        <!-- /FORM_ROW_3-->
+
+
+
+      </div><!--/GRID 2-->
+      <!--/SEGUNDA DIV -->
+    </div><!--/GRID -->
+  </form><!--/FORM-->
 </div>
+<!--/SEGUNDA ABA -->
 
-
-
-
-<div class="col-md-6 bg-danger">
-  <div class="">
-
-  </div>
-
-</div>
-
-
-</div>
-
-</div>
 
 <div class="tab-pane fade" id="parcelas" role="tabpanel" aria-labelledby="parcelas-tab">
-  ME INTERNA
+  <h1>ME INTERNA</h1>
 </div>
 
-</div><!--/MyTabContent-->
+</div><!--/MyTabContent FIM-->
 
 
 
@@ -350,7 +392,7 @@
 
 
 
-</div>
+</div><!--CONTAINER -->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
