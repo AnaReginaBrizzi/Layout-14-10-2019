@@ -37,6 +37,12 @@
       <li class="nav-item">
         <a class="nav-link" id="analise_contrib-tab" data-toggle="tab" href="#analise_contrib" role="tab" aria-controls="analise_contrib" aria-selected="false">Analise de contribuinte</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" id="historico_acoes-tab" data-toggle="tab" href="#historico_acoes" role="tab" aria-controls="historico_acoes" aria-selected="false">Histórico de ações</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="botoes_menu-tab" data-toggle="tab" href="#botoes_menu" role="tab" aria-controls="botoes_menu" aria-selected="false">Menu</a>
+      </li>
     </ul>
     <div class="tab-content" id="myTabContent"><!--MyTabContent-->
 
@@ -149,358 +155,358 @@
           </table>
       </div>
     </div>
-<!--/PRIMEIRA ABA-->
+    <!--/PRIMEIRA ABA-->
 
 
-<!-- SEGUNDA ABA -->
-<div class="tab-pane fade" id="analise_cadastral" role="tabpanel" aria-labelledby="analise_cadastral-tab">
-  <form class="form-horizontal"><!--FORM-->
-    <div class="row"><!--GRID -->
-      <!-- PRIMEIRA DIV -->
-      <div class="col-md-6">
-        <!--FIELDSET-->
-        <fieldset><legend><h2>Analise cadastral</h2></legend>
-          <div class="form-row"><!--FORM_ROW-->
-            <div class="form-group col-md-6">
-              <label for="txt_nome">Nome:</label>
-              <input name="txt_nome" type="text" class="form-control" id="txt_nome" placeholder="Insira seu nome">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="txt_nascimento">Data de nascimento:</label>
-              <input name="txt_nascimento" type="text" class="form-control" id="txt_nascimento" placeholder="Insira sua data de nascimento">
-            </div>
-          </div><!--/FORM_ROW-->
+    <!-- SEGUNDA ABA -->
+    <div class="tab-pane fade" id="analise_cadastral" role="tabpanel" aria-labelledby="analise_cadastral-tab">
+      <form class="form-horizontal"><!--FORM-->
+        <div class="row"><!--GRID -->
+          <!-- PRIMEIRA DIV -->
+          <div class="col-md-6">
+            <!--FIELDSET-->
+            <fieldset><legend><h2>Analise cadastral</h2></legend>
+              <div class="form-row"><!--FORM_ROW-->
+                <div class="form-group col-md-6">
+                  <label for="txt_nome">Nome:</label>
+                  <input name="txt_nome" type="text" class="form-control" id="txt_nome" placeholder="Insira seu nome">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="txt_nascimento">Data de nascimento:</label>
+                  <input name="txt_nascimento" type="text" class="form-control" id="txt_nascimento" placeholder="Insira sua data de nascimento">
+                </div>
+              </div><!--/FORM_ROW-->
 
-          <div class="form-row"><!--FORM_ROW_2-->
-            <div class="form-group col-md-6">
-              <label for="txt_email">E-mail:</label>
-              <input name="txt_email" type="text" class="form-control" id="txt_email" placeholder="Insira seu e-mail">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="txt_cpf">CPF:</label>
-              <input name="txt_cpf" type="text" class="form-control" id="txt_cpf" placeholder="Insira seu CPF">
-            </div>
-          </div><!--/FORM_ROW_2-->
+              <div class="form-row"><!--FORM_ROW_2-->
+                <div class="form-group col-md-6">
+                  <label for="txt_email">E-mail:</label>
+                  <input name="txt_email" type="text" class="form-control" id="txt_email" placeholder="Insira seu e-mail">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="txt_cpf">CPF:</label>
+                  <input name="txt_cpf" type="text" class="form-control" id="txt_cpf" placeholder="Insira seu CPF">
+                </div>
+              </div><!--/FORM_ROW_2-->
 
-          <div class="form-row"><!--FORM_ROW_3-->
-            <div class="form-group col-md-3">
-              <label for="cbo_sexo">Sexo:</label>
-              <select id="cbo_sexo" class="form-control">
-                <option value="1" selected>Masculino</option>
-                <option value="2">Feminino</option>
-              </select>
-            </div>
+              <div class="form-row"><!--FORM_ROW_3-->
+                <div class="form-group col-md-3">
+                  <label for="cbo_sexo">Sexo:</label>
+                  <select id="cbo_sexo" class="form-control">
+                    <option value="1" selected>Masculino</option>
+                    <option value="2">Feminino</option>
+                  </select>
+                </div>
 
-            <div class="form-group col-md-3">
-              <label for="cbo_tipo">Pessoa:</label>
-              <select id="cbo_tipo" class="form-control">
-                <option value="1" selected>Física</option>
-                <option value="2">Jurídica</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="txt_endereco">Endereço:</label>
-              <input name="txt_endereco" type="text" class="form-control" id="txt_endereco" placeholder="Insira seu endereço">
-            </div>
-          </div><!--/FORM_ROW_3-->
+                <div class="form-group col-md-3">
+                  <label for="cbo_tipo">Pessoa:</label>
+                  <select id="cbo_tipo" class="form-control">
+                    <option value="1" selected>Física</option>
+                    <option value="2">Jurídica</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="txt_endereco">Endereço:</label>
+                  <input name="txt_endereco" type="text" class="form-control" id="txt_endereco" placeholder="Insira seu endereço">
+                </div>
+              </div><!--/FORM_ROW_3-->
 
-          <div class="form-row"><!--FORM_ROW_4-->
-            <div class="form-group col-md-3">
-              <label for="txt_nresidencia">Nº residência</label>
-              <input name="txt_nresidencia" type="text" class="form-control" id="txt_nresidencia" placeholder="Insira o nº da residência">
-            </div>
-            <div class="form-group col-md-2">
-              <label for="cbo_logadouro">Logadouro:</label>
-              <select name="cbo_logadouro" id="cbo_logadouro" class="form-control">
-                <option value="1" selected="">Rua</option>
-                <option value="2">Beco</option>
-                <option value="3">Est</option>
-                <option value="4">Av</option>
-                <option value="5">Trav</option>
-                <option value="6">Out</option>
-              </select>
-            </div>
-            <div class="form-group col-md-7">
-              <label for="txt_bairro">Bairro:</label>
-              <input name="txt_bairro" type="text" class="form-control" id="txt_cpf" placeholder="Insira o bairro">
-            </div>
-          </div><!--/FORM_ROW_4-->
+              <div class="form-row"><!--FORM_ROW_4-->
+                <div class="form-group col-md-3">
+                  <label for="txt_nresidencia">Nº residência</label>
+                  <input name="txt_nresidencia" type="text" class="form-control" id="txt_nresidencia" placeholder="Insira o nº da residência">
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="cbo_logadouro">Logadouro:</label>
+                  <select name="cbo_logadouro" id="cbo_logadouro" class="form-control">
+                    <option value="1" selected="">Rua</option>
+                    <option value="2">Beco</option>
+                    <option value="3">Est</option>
+                    <option value="4">Av</option>
+                    <option value="5">Trav</option>
+                    <option value="6">Out</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-7">
+                  <label for="txt_bairro">Bairro:</label>
+                  <input name="txt_bairro" type="text" class="form-control" id="txt_cpf" placeholder="Insira o bairro">
+                </div>
+              </div><!--/FORM_ROW_4-->
 
-          <div class="form-row"><!--FORM_ROW_5-->
-            <div class="form-group col-md-3">
-              <label for="txt_cep">CEP:</label>
-              <input name="txt_cep" type="text" class="form-control" id="txt_cep" placeholder="Insira o CEP">
-            </div>
-            <div class="form-group col-md-5">
-              <label for="txt_complemento">Complemento:</label>
-              <input name="txt_complemento" type="text" class="form-control" id="txt_complemento" placeholder="Insira um complemento">
-            </div>
-            <div class="form-group col-md-4">
-              <label for="cbo_cidade">Cidade:</label>
-              <select name="cbo_cidade" id="cbo_cidade" class="form-control">
-                <option value="1" selected="">Jaú</option>
-                <option value="2">Barra Bonita</option>
-                <option value="3">Bauru</option>
-              </select>
-            </div>
-          </div><!--FORM_ROW_6-->
+              <div class="form-row"><!--FORM_ROW_5-->
+                <div class="form-group col-md-3">
+                  <label for="txt_cep">CEP:</label>
+                  <input name="txt_cep" type="text" class="form-control" id="txt_cep" placeholder="Insira o CEP">
+                </div>
+                <div class="form-group col-md-5">
+                  <label for="txt_complemento">Complemento:</label>
+                  <input name="txt_complemento" type="text" class="form-control" id="txt_complemento" placeholder="Insira um complemento">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="cbo_cidade">Cidade:</label>
+                  <select name="cbo_cidade" id="cbo_cidade" class="form-control">
+                    <option value="1" selected="">Jaú</option>
+                    <option value="2">Barra Bonita</option>
+                    <option value="3">Bauru</option>
+                  </select>
+                </div>
+              </div><!--FORM_ROW_6-->
 
-          <div class="form-inline"><!--FORM_ROW_7-->
-            <div class="form-group col-md-6">
-              <label for="cbo_uf">UF:</label>
-              <select name="cbo_uf" id="cbo_uf" class="form-control">
-                <option value="1" selected="">Acre (AC)</option>
-                <option value="2">Alagoas (AL)</option>
-                <option value="3">Amapá (AP)</option>
-                <option value="4">Amazonas (AM)</option>
-                <option value="5">Bahia (BA)</option>
-                <option value="6">Ceará (CE)</option>
-                <option value="7">Distrito Federal (DF)</option>
-                <option value="8">Espírito Santo (ES)</option>
-                <option value="9">Goiás (GO)</option>
-                <option value="10">Maranhão (MA)</option>
-                <option value="11">Mato Grosso (MT)</option>
-                <option value="12">Mato Grosso do Sul (MS)</option>
-                <option value="13">Minas Gerais (MG)</option>
-                <option value="14">Pará (PA)</option>
-                <option value="15">Paraíba (PB)</option>
-                <option value="16">Paraná (PR)</option>
-                <option value="17">Pernambuco (PE)</option>
-                <option value="18">Piauí (PI)</option>
-                <option value="19">Rio de Janeiro (RJ)</option>
-                <option value="20">Rio Grande do Norte (RN)</option>
-                <option value="21">Rio Grande do Sul (RS)</option>
-                <option value="22">Rondônia (RO)</option>
-                <option value="23">Roraima (RR)</option>
-                <option value="24">Santa Catarina (SC)</option>
-                <option value="25">São Paulo (SP)</option>
-                <option value="26">Sergipe (SE)</option>
-                <option value="27">Tocantins (TO)</option>
-              </select>
-            </div>
-            <div class="col-md-4">
-              <button type="button" class="btn btn-info btn-lg"><i class="fas fa-search"></i></button>
-              <button type="button" class="btn btn-danger btn-lg"><i class="fas fa-times"></i></button>
-            </div>
-          </div><!--/FORM_ROW_7-->
+              <div class="form-inline"><!--FORM_ROW_7-->
+                <div class="form-group col-md-6">
+                  <label for="cbo_uf">UF:</label>
+                  <select name="cbo_uf" id="cbo_uf" class="form-control">
+                    <option value="1" selected="">Acre (AC)</option>
+                    <option value="2">Alagoas (AL)</option>
+                    <option value="3">Amapá (AP)</option>
+                    <option value="4">Amazonas (AM)</option>
+                    <option value="5">Bahia (BA)</option>
+                    <option value="6">Ceará (CE)</option>
+                    <option value="7">Distrito Federal (DF)</option>
+                    <option value="8">Espírito Santo (ES)</option>
+                    <option value="9">Goiás (GO)</option>
+                    <option value="10">Maranhão (MA)</option>
+                    <option value="11">Mato Grosso (MT)</option>
+                    <option value="12">Mato Grosso do Sul (MS)</option>
+                    <option value="13">Minas Gerais (MG)</option>
+                    <option value="14">Pará (PA)</option>
+                    <option value="15">Paraíba (PB)</option>
+                    <option value="16">Paraná (PR)</option>
+                    <option value="17">Pernambuco (PE)</option>
+                    <option value="18">Piauí (PI)</option>
+                    <option value="19">Rio de Janeiro (RJ)</option>
+                    <option value="20">Rio Grande do Norte (RN)</option>
+                    <option value="21">Rio Grande do Sul (RS)</option>
+                    <option value="22">Rondônia (RO)</option>
+                    <option value="23">Roraima (RR)</option>
+                    <option value="24">Santa Catarina (SC)</option>
+                    <option value="25">São Paulo (SP)</option>
+                    <option value="26">Sergipe (SE)</option>
+                    <option value="27">Tocantins (TO)</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <button type="button" class="btn btn-info btn-lg"><i class="fas fa-search"></i></button>
+                  <button type="button" class="btn btn-danger btn-lg"><i class="fas fa-times"></i></button>
+                </div>
+              </div><!--/FORM_ROW_7-->
 
-          <div><!--BOTAO ANALISE CADASTRAL -->
-            <button type="button" style="width: 100%" class="btn btn-primary">
-              <i class="fas fa-check"></i><b> Analise cadastral realizada: 11/10/2019</b>
-            </button>
-          </div><!--/BOTAO ANALISE CADASTRAL -->
+              <div><!--BOTAO ANALISE CADASTRAL -->
+                <button type="button" style="width: 100%" class="btn btn-primary">
+                  <i class="fas fa-check"></i><b> Analise cadastral realizada: 11/10/2019</b>
+                </button>
+              </div><!--/BOTAO ANALISE CADASTRAL -->
 
-        </fieldset>
-        <!--/FIELDSET-->
-      </div>
-      <!-- SEGUNDA DIV -->
-      <div class="col-md-6"><!--GRID 2-->
-        
-        <!-- FORM_ROW_1-->
-        <div class="form-row align-items-center">
-            <div class="form-group col-md-6">
-              <label for="txt_responsavel">Responsável:</label>
-              <input name="txt_responsavel" type="text" class="form-control" id="txt_responsavel" placeholder="Nome do responsável">
-            </div>
-            <div class="form-group col-md-4">
-              <label for="cbo_mensageiro">Mensageiro:</label>
-              <select name="cbo_mensageiro" id="cbo_mensageiro" class="form-control">
-                <option value="1">Segundo-mTeste</option>
-                <option value="" disabled="">-----------------------------------</option>
-                <option value="2">Mensageiro Franca</option>
-                <option value="3">Mensageiro-Teste2</option>
-                <option value="4">mensageiroTesteNovo</option>
-                <option value="5">Segundo-mTeste</option>
-                <option value="6">TercMensTeste</option>
-              </select>
-            </div>
-            <div class="form-group col-md-2">
-              <button name="btn_verificar_mensageiro" type="button" class="btn btn-link">Verificar mensageiro:</button>
-            </div>
-        </div>
-        <!-- /FORM_ROW_1-->
-
-      
-        <!-- FORM_ROW_2-->
-        <div class="form-row align-items-center">
-          <div class="form-group col-md-4">
-            <label for="txt_rota">Rota </label>
-            <input name="txt_rota" type="text" class="form-control" id="txt_rota" readonly="">
+            </fieldset>
+            <!--/FIELDSET-->
           </div>
-          <div class="form-group col-md-2">
-            <button name="btn_alterar_rota" type="button" class="btn btn-link">Alterar rota </button>
-          </div>
-          <div class="form-group col-md-6">
-             <label for="cmb_obs_mensageiro">Observação (mensageiro):</label>
-             <textarea name="cmb_obs_mensageiro" class="form-control" id="cmb_obs_mensageiro" rows="3">Negociar Campanha Especial - Negociar Campanha Especial - Negociar Campanha Especial -Negociar Campanha Especial -a - (Transferiu para carteira mensageiro)</textarea>
-          </div>
-        </div>
-        <!-- /FORM_ROW_2 -->
-
-        <!-- FORM_ROW_3 -->
-        <div class="form-row">
-          <div class="form-group col-md-4">
-            <label for="cmb_obs_operadora">Observação (operadora):</label>
-            <textarea name="cmb_obs_operadora" class="form-control" id="cmb_obs_operadora" rows="3"></textarea>
-          </div>
-            <div class="form-group col-md-4">
-              <label for="cbo_operadora">Operadora:</label>
-              <select id="cbo_operadora" class="form-control">
-                <option selected>Operadora 1</option>
-                <option>Operadora 2</option>
-                <option>Operadora 3</option>
-              </select>
+          <!-- SEGUNDA DIV -->
+          <div class="col-md-6"><!--GRID 2-->
+            
+            <!-- FORM_ROW_1-->
+            <div class="form-row align-items-center">
+                <div class="form-group col-md-6">
+                  <label for="txt_responsavel">Responsável:</label>
+                  <input name="txt_responsavel" type="text" class="form-control" id="txt_responsavel" placeholder="Nome do responsável">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="cbo_mensageiro">Mensageiro:</label>
+                  <select name="cbo_mensageiro" id="cbo_mensageiro" class="form-control">
+                    <option value="1">Segundo-mTeste</option>
+                    <option value="" disabled="">-----------------------------------</option>
+                    <option value="2">Mensageiro Franca</option>
+                    <option value="3">Mensageiro-Teste2</option>
+                    <option value="4">mensageiroTesteNovo</option>
+                    <option value="5">Segundo-mTeste</option>
+                    <option value="6">TercMensTeste</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <button name="btn_verificar_mensageiro" type="button" class="btn btn-link">Verificar mensageiro:</button>
+                </div>
             </div>
-            <div class="form-group col-md-4">
-              <label for="txt_turno">Turno:</label>
-              <input name="txt_turno" type="email" class="form-control" id="txt_turno" readonly>
+            <!-- /FORM_ROW_1-->
+
+          
+            <!-- FORM_ROW_2-->
+            <div class="form-row align-items-center">
+              <div class="form-group col-md-4">
+                <label for="txt_rota">Rota </label>
+                <input name="txt_rota" type="text" class="form-control" id="txt_rota" readonly="">
+              </div>
+              <div class="form-group col-md-2">
+                <button name="btn_alterar_rota" type="button" class="btn btn-link">Alterar rota </button>
+              </div>
+              <div class="form-group col-md-6">
+                 <label for="cmb_obs_mensageiro">Observação (mensageiro):</label>
+                 <textarea name="cmb_obs_mensageiro" class="form-control" id="cmb_obs_mensageiro" rows="3">Negociar Campanha Especial - Negociar Campanha Especial - Negociar Campanha Especial -Negociar Campanha Especial -a - (Transferiu para carteira mensageiro)</textarea>
+              </div>
             </div>
-        </div>
-        <!-- /FORM_ROW_3-->
+            <!-- /FORM_ROW_2 -->
 
-        <!-- FORM_ROW_4 -->
-        <div class="form-row align-items-center">
-          <div class="form-group col-md-6">
-             <label for="cbo_operadora_especial">Operadora especial:</label>
-             <select id="cbo_operadora_especial" class="form-control">
-               <option value="1" selected>Operadora especial 1</option>
-               <option value="2">Operadora especial 2</option>
-               <option value="3">Operadora especial 3</option>
-             </select>
-          </div>   
-
-          <div class="form-group col-md-3">
-            <div class="form-check">
-               <input class="form-check-input" type="checkbox" id="chk_socio_contribuinte">
-               <label class="form-check-label" for="chk_socio_contribuinte">
-                 Sócio contribuinte.
-               </label>
-             </div>
+            <!-- FORM_ROW_3 -->
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="cmb_obs_operadora">Observação (operadora):</label>
+                <textarea name="cmb_obs_operadora" class="form-control" id="cmb_obs_operadora" rows="3"></textarea>
+              </div>
+                <div class="form-group col-md-4">
+                  <label for="cbo_operadora">Operadora:</label>
+                  <select id="cbo_operadora" class="form-control">
+                    <option selected>Operadora 1</option>
+                    <option>Operadora 2</option>
+                    <option>Operadora 3</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="txt_turno">Turno:</label>
+                  <input name="txt_turno" type="email" class="form-control" id="txt_turno" readonly>
+                </div>
             </div>
-           <div class="form-group col-md-3">
-            <label for="cbo_categoria">Categoria:</label>
-             <select id="cbo_categoria" class="form-control">
-               <option value="1">Recadastro</option>
-               <option value="2">Copel Fidelizado</option>
-               <option value="3">Copel Parcelado</option>
-               <option value="4">Copel Mensal</option>
-               <option value="5">Excluir</option>
-               <option value="6">Fidelizado</option>
-               <option value="7">Mensal</option>
-               <option value="8">Parcelado</option>
-               <option value="9">Boleto</option>
-               <option value="10">Boleto Fidelizado</option>
-               <option value="11">Ouro</option>
-               <option value="12">Prata</option>
-               <option value="13">Bronze</option>
-               <option value="14">Diamante</option>
-               <option value="15">Padrinho</option>
-               <option value="16">Dr Amigo</option>
-             </select>
+            <!-- /FORM_ROW_3-->
+
+            <!-- FORM_ROW_4 -->
+            <div class="form-row align-items-center">
+              <div class="form-group col-md-6">
+                 <label for="cbo_operadora_especial">Operadora especial:</label>
+                 <select id="cbo_operadora_especial" class="form-control">
+                   <option value="1" selected>Operadora especial 1</option>
+                   <option value="2">Operadora especial 2</option>
+                   <option value="3">Operadora especial 3</option>
+                 </select>
+              </div>   
+
+              <div class="form-group col-md-3">
+                <div class="form-check">
+                   <input class="form-check-input" type="checkbox" id="chk_socio_contribuinte">
+                   <label class="form-check-label" for="chk_socio_contribuinte">
+                     Sócio contribuinte.
+                   </label>
+                 </div>
+                </div>
+               <div class="form-group col-md-3">
+                <label for="cbo_categoria">Categoria:</label>
+                 <select id="cbo_categoria" class="form-control">
+                   <option value="1">Recadastro</option>
+                   <option value="2">Copel Fidelizado</option>
+                   <option value="3">Copel Parcelado</option>
+                   <option value="4">Copel Mensal</option>
+                   <option value="5">Excluir</option>
+                   <option value="6">Fidelizado</option>
+                   <option value="7">Mensal</option>
+                   <option value="8">Parcelado</option>
+                   <option value="9">Boleto</option>
+                   <option value="10">Boleto Fidelizado</option>
+                   <option value="11">Ouro</option>
+                   <option value="12">Prata</option>
+                   <option value="13">Bronze</option>
+                   <option value="14">Diamante</option>
+                   <option value="15">Padrinho</option>
+                   <option value="16">Dr Amigo</option>
+                 </select>
+                </div>
             </div>
-        </div>
-        <!-- /FORM_ROW_4 -->
-        <!-- FORM_ROW_5 -->
-        <div class="form-row">
-          <div class="form-group col-md-4">
-            <label for="cbo_recebimento">Recebimento:</label>
-             <select id="cbo_recebimento" class="form-control">
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-             </select>
-          </div>
-          <div class="form-group col-md-4">
-            <label for="txt_valor">Valor:</label>
-            <input type="text" class="form-control" id="txt_valor">            
-          </div>
-          <div class="form-group col-md-4">
-            <label for="cbo_empresa_amiga">Empresa amiga:</label>
-             <select id="cbo_empresa_amiga" class="form-control">
-               <option value="1">Sim</option>
-               <option value="2" selected="">Não</option>
-          </div>          
-        </div>
-        <!-- /FORM_ROW_5 -->
-        <!-- FORM_ROW_6 -->
-        <div class="form-row align-items-center">
-          <div class="form-group col-sm my-4">
-            <label for="txt_debug"></label>
-            <input type="text" class="form-control" id="txt_debug" hidden>
-          </div>
-          <div class="form-inline col-sm my-4">
-            <input class="form-check-input" type="checkbox" value="" id="chk_nao_entrar_cobranca">
-            <label class="form-check-label" for="chk_nao_entrar_cobranca">
-               Não entrar na cobrança (boleto).
-            </label>                        
-          </div>
-          <div class="form-group col-sm my-4">
-            <input class="form-check-input" type="checkbox" value="" id="chk_contribuinte_bimestral">
-            <label class="form-check-label" for="chk_contribuinte_bimestral">
-              Contribuinte bimestral.
-            </label>
-          </div>
-        </div>
-        <!-- /FORM_ROW_6 -->
+            <!-- /FORM_ROW_4 -->
+            <!-- FORM_ROW_5 -->
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="cbo_recebimento">Recebimento:</label>
+                 <select id="cbo_recebimento" class="form-control">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                 </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="txt_valor">Valor:</label>
+                <input type="text" class="form-control" id="txt_valor">            
+              </div>
+              <div class="form-group col-md-4">
+                <label for="cbo_empresa_amiga">Empresa amiga:</label>
+                 <select id="cbo_empresa_amiga" class="form-control">
+                   <option value="1">Sim</option>
+                   <option value="2" selected="">Não</option>
+              </div>          
+            </div>
+            <!-- /FORM_ROW_5 -->
+            <!-- FORM_ROW_6 -->
+            <div class="form-row align-items-center">
+              <div class="form-group col-sm my-4">
+                <label for="txt_debug"></label>
+                <input type="text" class="form-control" id="txt_debug" hidden>
+              </div>
+              <div class="form-inline col-sm my-4">
+                <input class="form-check-input" type="checkbox" value="" id="chk_nao_entrar_cobranca">
+                <label class="form-check-label" for="chk_nao_entrar_cobranca">
+                   Não entrar na cobrança (boleto).
+                </label>                        
+              </div>
+              <div class="form-group col-sm my-4">
+                <input class="form-check-input" type="checkbox" value="" id="chk_contribuinte_bimestral">
+                <label class="form-check-label" for="chk_contribuinte_bimestral">
+                  Contribuinte bimestral.
+                </label>
+              </div>
+            </div>
+            <!-- /FORM_ROW_6 -->
 
-        <!-- FORM_ROW_7 -->
-        <div class="form-row">
-          <div class="form-group col-md-4">
-            <label for="txt_data_cadastro">Data de cadastro:</label>
-            <input type="text" class="form-control" id="txt_data_cadastro">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="cbo_contribuinte_setor">Contribuinte setor:</label>
-            <select id="cbo_contribuinte_setor" class="form-control">
-              <option value="1">Contribuinte setor 1</option>
-              <option value="2">Contribuinte setor 2</option>
-              <option value="3">Contribuinte setor 3</option>
-            </select>
-          </div>
-        </div>
-        <!-- /FORM_ROW_7 -->
-        
-        <div><!--BOTAO SALVAR ALTERAÇÃO -->
-          <button type="button" style="width: 100%" class="btn btn-primary">
-            <i class="far fa-save"></i><b> Salvar alteração</b>
-          </button>
-        </div><!--/BOTAO SALVAR ALTERAÇÃO -->
+            <!-- FORM_ROW_7 -->
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="txt_data_cadastro">Data de cadastro:</label>
+                <input type="text" class="form-control" id="txt_data_cadastro">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="cbo_contribuinte_setor">Contribuinte setor:</label>
+                <select id="cbo_contribuinte_setor" class="form-control">
+                  <option value="1">Contribuinte setor 1</option>
+                  <option value="2">Contribuinte setor 2</option>
+                  <option value="3">Contribuinte setor 3</option>
+                </select>
+              </div>
+            </div>
+            <!-- /FORM_ROW_7 -->
+            
+            <div><!--BOTAO SALVAR ALTERAÇÃO -->
+              <button type="button" style="width: 100%" class="btn btn-primary">
+                <i class="far fa-save"></i><b> Salvar alteração</b>
+              </button>
+            </div><!--/BOTAO SALVAR ALTERAÇÃO -->
 
 
-      </div><!--/GRID 2-->
-      <!--/SEGUNDA DIV -->
-    </div><!--/GRID -->
-  </form><!--/FORM-->
-</div>
-<!--/SEGUNDA ABA -->
+          </div><!--/GRID 2-->
+          <!--/SEGUNDA DIV -->
+        </div><!--/GRID -->
+      </form><!--/FORM-->
+    </div>
+    <!--/SEGUNDA ABA -->
 
 <!-- TERCEIRA ABA -->
 <div class="tab-pane fade" id="parcelas" role="tabpanel" aria-labelledby="parcelas-tab">
@@ -576,17 +582,107 @@
           <i class="fas fa-list"></i><b> Consultar parcelas migração</b>
         </button>
       <!--/CONSULTAR PARCELAS MIGRAÇÃO -->
-      
-
-  </div>
+    </div>
 </div>
 <!-- /TERCEIRA ABA -->
 
 <!-- QUARTA ABA -->
 <div class="tab-pane fade" id="analise_contrib" role="tabpanel" aria-labelledby="analise_contrib-tab">
-  <h1>PFV DÊ CERTO</h1>
+  <div class="row d-flex justify-content-center">
+    <table class="table table-striped text-center border">
+      <thead>
+        <tr>
+          <th colspan="6" scope="col"><h2>Análise de contribuinte</h2></th>
+        <tr>
+      </thead>
+      <tbody>
+        <tr>  
+          <th scope="col">Data de Abertura</th>
+          <th scope="col">Código da Análise</th>
+          <th scope="col">Mensageiro</th>
+          <th scope="col">Observação do Mensageiro</th>
+          <th scope="col">Resposta da Análise </th>
+          <th scope="col">Quem Respondeu?</th>
+        </tr>
+        <tr>
+          <th>13/10/2019</th>
+          <td>2</td>
+          <td>Segundo-mTeste</td>
+          <td>Teste do aplicativo</td>
+          <td>Análise ok</td>
+          <td>Coordenadora teste</td>
+        </tr>
+        <tr>
+          <th>11/07/2019</th>
+          <td>1</td>
+          <td>Segundo-mTeste</td>
+          <td>Teste do aplicativo</td>
+          <td>Análise ok</td>
+          <td>Coordenadora teste</td>
+        </tr>
+      </tbody>
+    </table> 
+  </div>
 </div>
 <!-- /QUARTA ABA -->
+
+<!-- QUINTA ABA -->
+<div class="tab-pane fade" id="historico_acoes" role="tabpanel" aria-labelledby="historico_acoes-tab">
+  <div class="row d-flex justify-content-center">
+    <table class="table table-striped text-center border">
+      <thead>
+        <tr>
+          <th colspan="4" scope="col"><h2>Histórico de ações</h2></th>
+        <tr>
+      </thead>
+      <tbody>
+        <tr>  
+          <th scope="col">Data da Ação</th>
+          <th scope="col">Hora da Ação</th>
+          <th scope="col">Usuário</th>
+          <th scope="col">Ação</th>
+        </tr>
+        <tr>
+          <th>11/10/2019</th>
+          <td>07:00</td>
+          <td>Operador especial 1</td>
+          <td>Recadastro enviado pela operadora</td>
+        </tr>
+        <tr>
+          <th>10/10/2019</th>
+          <td>17:00</td>
+          <td>Operador especial 1</td>
+          <td>Contribuiu Especial Mensageiro</td>
+        </tr>
+        <tr>
+          <th>10/10/2019</th>
+          <td>15:30</td>
+          <td>Operador especial 2</td>
+          <td>Contribuiu Especial</td>
+        </tr>
+        <tr>
+          <th>10/10/2019</th>
+          <td>13:30</td>
+          <td>Operador especial 3</td>
+          <td>Atualizou os dados do contribuinte</td>
+        </tr>
+      </tbody>
+    </table> 
+    <!--BOTAO CONSULTAR AÇÕES ANTERIORES -->
+    <button type="button" style="width: 100%" class="btn btn-primary">
+      <i class="fas fa-list"></i><b> Consultar ações anteriores</b>
+    </button>
+    <!--/BOTAO CONSULTAR AÇÕES ANTERIORES -->
+  </div>
+</div>
+<!-- /QUINTA ABA -->
+
+<!-- SEXTA ABA -->
+<div class="tab-pane fade" id="botoes_menu" role="tabpanel" aria-labelledby="botoes_menu-tab">
+  <h1>AAAAAAAAAAAAAA</h1>
+</div>
+<!-- /SEXTA ABA -->
+
 </div><!--/MyTabContent FIM-->
 
 
