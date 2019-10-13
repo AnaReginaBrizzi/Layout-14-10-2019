@@ -34,6 +34,9 @@
       <li class="nav-item">
         <a class="nav-link" id="parcelas-tab" data-toggle="tab" href="#parcelas" role="tab" aria-controls="parcelas" aria-selected="false">Parcelas</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" id="analise_contrib-tab" data-toggle="tab" href="#analise_contrib" role="tab" aria-controls="analise_contrib" aria-selected="false">Analise de contribuinte</a>
+      </li>
     </ul>
     <div class="tab-content" id="myTabContent"><!--MyTabContent-->
 
@@ -44,7 +47,7 @@
           <table class="table table-striped text-center border">
                 <thead>
                   <tr>
-                    <th colspan="4" scope="col">Entidade teste desenvolvedor</th>
+                    <th colspan="4" scope="col"><h2>Entidade teste desenvolvedor</h2></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -156,7 +159,7 @@
       <!-- PRIMEIRA DIV -->
       <div class="col-md-6">
         <!--FIELDSET-->
-        <fieldset><legend>Analise cadastral</legend>
+        <fieldset><legend><h2>Analise cadastral</h2></legend>
           <div class="form-row"><!--FORM_ROW-->
             <div class="form-group col-md-6">
               <label for="txt_nome">Nome:</label>
@@ -499,11 +502,91 @@
 </div>
 <!--/SEGUNDA ABA -->
 
-
+<!-- TERCEIRA ABA -->
 <div class="tab-pane fade" id="parcelas" role="tabpanel" aria-labelledby="parcelas-tab">
-  <h1>ME INTERNA</h1>
-</div>
+  <div class="row d-flex justify-content-center">
+    <table class="table table-striped text-center border">
+      <thead>
+        <tr>
+          <th colspan="8" scope="col"><h2>Parcelas de Beltrano</h2></th>
+        <tr>
+      </thead>
+      <tbody>
+        <tr>  
+          <th scope="col">Nº Parcela</th>
+          <th scope="col">Vencimento</th>
+          <th scope="col">Valor</th>
+          <th scope="col">Status</th>
+          <th scope="col">Recebido</th>
+          <th scope="col">Mensageiro</th>
+          <th scope="col">Operadora</th>
+          <th scope="col">2ª Via Impressa</th>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>20/10/2020</td>
+          <td>R$ 60,00</td>
+          <td>Aberta</td>
+          <td>Parcela em aberto!</td>
+          <td>Segundo-mTeste</td>
+          <td>Segundo-mTeste</td>
+          <td>Não</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>20/12/2019</td>
+          <td>R$ 70,00</td>
+          <td>Aberta</td>
+          <td>Parcela em aberto!</td>
+          <td>Segundo-mTeste</td>
+          <td>Segundo-mTeste</td>
+          <td>Não</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>20/11/2019</td>
+          <td>R$ 40,00</td>
+          <td>Aberta</td>
+          <td>Parcela em aberto!</td>
+          <td>Segundo-mTeste</td>
+          <td>Segundo-mTeste</td>
+          <td>Não</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>20/10/2019</td>
+          <td>R$ 80,00</td>
+          <td>Aberta</td>
+          <td>Parcela em aberto!</td>
+          <td>Segundo-mTeste</td>
+          <td>Segundo-mTeste</td>
+          <td>Não</td>
+        </tr>
+      </tbody>
+    </table> 
+    
+    
+      <!--BOTAO CONSULTAR PARCELAS ANTERIORES -->
+        <button type="button" style="width: 50%" class="btn btn-primary">
+          <i class="fas fa-list"></i><b> Consultar parcelas anteriores</b>
+        </button>
+      <!--/CONSULTAR PARCELAS ANTERIORES -->
+      <!--BOTAO CONSULTAR PARCELAS MIGRAÇÃO -->
+        <button type="button" style="width: 50%" class="btn btn-success">
+          <i class="fas fa-list"></i><b> Consultar parcelas migração</b>
+        </button>
+      <!--/CONSULTAR PARCELAS MIGRAÇÃO -->
+      
 
+  </div>
+</div>
+<!-- /TERCEIRA ABA -->
+
+<!-- QUARTA ABA -->
+<div class="tab-pane fade" id="analise_contrib" role="tabpanel" aria-labelledby="analise_contrib-tab">
+  <h1>PFV DÊ CERTO</h1>
+</div>
+<!-- /QUARTA ABA -->
 </div><!--/MyTabContent FIM-->
 
 
