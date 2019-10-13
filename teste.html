@@ -69,7 +69,7 @@
                     <td>
                       <div>
                                                 
-                        <input id="txt_add_telefone" type="text" class="form-control mx-sm-3">
+                        <input id="txt_add_telefone" type="text" class="form-control mx-sm-3" placeholder="Ex.: (00)00000-0000">
 
                       </div>
 
@@ -105,7 +105,7 @@
                     <th>Data de retorno:</th>
                     <td>
                       <div>
-                       <input id="" type="text" class="form-control mx-sm-3">
+                       <input id="txt_data_retorno" type="text" class="form-control mx-sm-3" placeholder="Ex.: dd/mm/aaaa">
                      </div>
                    </td>
                    <td>
@@ -176,7 +176,7 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="txt_nascimento">Data de nascimento:</label>
-                  <input name="txt_nascimento" type="text" class="form-control" id="txt_nascimento" placeholder="Insira sua data de nascimento">
+                  <input name="txt_nascimento" type="text" class="form-control" id="txt_nascimento" placeholder="Ex.: dd/mm/aaaa">
                 </div>
               </div><!--/FORM_ROW-->
 
@@ -187,7 +187,7 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="txt_cpf">CPF:</label>
-                  <input name="txt_cpf" type="text" class="form-control" id="txt_cpf" placeholder="Insira seu CPF">
+                  <input name="txt_cpf" type="text" class="form-control" id="txt_cpf" placeholder="Ex.: 000.000.000-00">
                 </div>
               </div><!--/FORM_ROW_2-->
 
@@ -238,7 +238,7 @@
               <div class="form-row"><!--FORM_ROW_5-->
                 <div class="form-group col-md-3">
                   <label for="txt_cep">CEP:</label>
-                  <input name="txt_cep" type="text" class="form-control" id="txt_cep" placeholder="Insira o CEP">
+                  <input name="txt_cep" type="text" class="form-control" id="txt_cep" placeholder="Ex.: 00000-000">
                 </div>
                 <div class="form-group col-md-5">
                   <label for="txt_complemento">Complemento:</label>
@@ -292,7 +292,7 @@
                   <button type="button" class="btn btn-danger btn-lg"><i class="fas fa-times"></i></button>
                 </div>
               </div><!--/FORM_ROW_7-->
-
+              <br>
               <div><!--BOTAO ANALISE CADASTRAL -->
                 <button type="button" style="width: 100%" class="btn btn-primary">
                   <i class="fas fa-check"></i><b> Analise cadastral realizada: 11/10/2019</b>
@@ -449,7 +449,7 @@
               </div>
               <div class="form-group col-md-4">
                 <label for="txt_valor">Valor:</label>
-                <input type="text" class="form-control" id="txt_valor">            
+                <input type="text" class="form-control" id="txt_valor" placeholder="Informe o valor">            
               </div>
               <div class="form-group col-md-4">
                 <label for="cbo_empresa_amiga">Empresa amiga:</label>
@@ -484,7 +484,7 @@
             <div class="form-row">
               <div class="form-group col-md-4">
                 <label for="txt_data_cadastro">Data de cadastro:</label>
-                <input type="text" class="form-control" id="txt_data_cadastro">
+                <input type="text" class="form-control" id="txt_data_cadastro" placeholder="Ex.: dd/mm/aaaa">
               </div>
               <div class="form-group col-md-4">
                 <label for="cbo_contribuinte_setor">Contribuinte setor:</label>
@@ -747,19 +747,6 @@
 <!-- SÉTIMA ABA -->
 
 </div><!--/MyTabContent FIM-->
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div><!--CONTAINER -->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -771,6 +758,11 @@
 <script type="text/javascript">
   $(document).ready(function(){
     $('#txt_add_telefone').mask('(00) 00000-0000');
+    $('#txt_data_retorno').mask('00/00/0000'); 
+    $('#txt_nascimento').mask('00/00/0000'); 
+    $('#txt_cpf').mask('000.000.000-00'); 
+    $('#txt_cep').mask('00000-000');
+    $('#txt_data_cadastro').mask('00/00/0000');
   });
 </script>
 
