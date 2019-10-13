@@ -19,16 +19,6 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-  <!-- i dont know -->
-  <style>
-    .TesteSumir{
-      display:none;
-      border: 1px solid red;
-    }
-    .BtnSumir:onclick .TesteSumir{
-      display:block;
-    }
-  </style>
 
 </head>
 <body>
@@ -82,13 +72,13 @@
                             </button>
                           </div>
 
-                          <div  class="mr-1" >
+                          <div  class="mr-1">
                             <button type="button" class="btn btn-outline-warning ">
                               <i class="fas fa-pen-square fa-lg"></i>
                             </button>
                           </div>
 
-                          <div  class="mr-1" >
+                          <div  class="mr-1">
                             <button type="button" class="btn btn-outline-success">
                               <i class="fas fa-plus"></i>
                             </button>
@@ -163,6 +153,7 @@
 <div class="tab-pane fade" id="analise_cadastral" role="tabpanel" aria-labelledby="analise_cadastral-tab">
   <form class="form-horizontal"><!--FORM-->
     <div class="row"><!--GRID -->
+      <!-- PRIMEIRA DIV -->
       <div class="col-md-6">
         <!--FIELDSET-->
         <fieldset><legend>Analise cadastral</legend>
@@ -251,7 +242,7 @@
             </div>
           </div><!--FORM_ROW_6-->
 
-          <div class="form-row"><!--FORM_ROW_7-->
+          <div class="form-inline"><!--FORM_ROW_7-->
             <div class="form-group col-md-6">
               <label for="cbo_uf">UF:</label>
               <select name="cbo_uf" id="cbo_uf" class="form-control">
@@ -364,6 +355,105 @@
         </div>
         <!-- /FORM_ROW_3-->
 
+        <!-- FORM_ROW_4 -->
+        <div class="form-row align-items-center">
+          <div class="form-group col-md-6">
+             <label for="cbo_operadora_especial">Operadora especial:</label>
+             <select id="cbo_operadora_especial" class="form-control">
+               <option value="1" selected>Operadora especial 1</option>
+               <option value="2">Operadora especial 2</option>
+               <option value="3">Operadora especial 3</option>
+             </select>
+          </div>   
+
+          <div class="form-group col-md-3">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" id="chk_socio_contribuinte">
+               <label class="form-check-label" for="chk_socio_contribuinte">
+                 Sócio contribuinte
+               </label>
+             </div>
+            </div>
+           <div class="form-group col-md-3">
+            <label for="cbo_categoria">Categoria:</label>
+             <select id="cbo_categoria" class="form-control">
+               <option value="1">Recadastro</option>
+               <option value="2">Copel Fidelizado</option>
+               <option value="3">Copel Parcelado</option>
+               <option value="4">Copel Mensal</option>
+               <option value="5">Excluir</option>
+               <option value="6">Fidelizado</option>
+               <option value="7">Mensal</option>
+               <option value="8">Parcelado</option>
+               <option value="9">Boleto</option>
+               <option value="10">Boleto Fidelizado</option>
+               <option value="11">Ouro</option>
+               <option value="12">Prata</option>
+               <option value="13">Bronze</option>
+               <option value="14">Diamante</option>
+               <option value="15">Padrinho</option>
+               <option value="16">Dr Amigo</option>
+             </select>
+            </div>
+        </div>
+        <!-- /FORM_ROW_4 -->
+        <!-- FORM_ROW_5 -->
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="cbo_recebimento">Recebimento:</label>
+             <select id="cbo_recebimento" class="form-control">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+             </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="txt_valor">Valor:</label>
+            <input type="text" class="form-control" id="txt_valor">            
+          </div>
+          <div class="form-group col-md-4">
+            <label for="cbo_empresa_amiga">Empresa amiga:</label>
+             <select id="cbo_empresa_amiga" class="form-control">
+               <option value="1">Sim</option>
+               <option value="2" selected="">Não</option>
+          </div>          
+        </div>
+        <!-- /FORM_ROW_5 -->
+        <!-- FORM_ROW_6 -->
+        <div class="form-row">
+          <div class="form-group col-md-4">
+                        
+          </div>
+        </div>
+        <!-- /FORM_ROW_6 -->
 
 
       </div><!--/GRID 2-->
