@@ -125,7 +125,7 @@
                     </form>
                   </td>
                   <td>
-                    <!-- TD VAZIO para PREENCHER a tabela-->
+                    <!-- TD VAZIO para PREENCHER a parte vazia da tabela-->
                   </td>
                 </tr>    
               </tbody>
@@ -296,9 +296,18 @@
               <div><!--BOTAO ANALISE CADASTRAL -->
                 <button type="button" style="width: 100%" class="btn btn-primary">
                   <i class="fas fa-check"></i><b> Analise cadastral realizada: 11/10/2019</b>
-                </button>
+                </button><br><br>
               </div><!--/BOTAO ANALISE CADASTRAL -->
-
+              <!-- ONDE SERÁ LANÇADO O RESULTADO DA PESQUISA -->
+              <div>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Resultado da pesquisa</span>
+                  </div>
+                  <textarea id="txt_result_endereco" class="form-control" aria-label="" disabled=""></textarea>
+                </div>
+              </div>
+              <!-- /ONDE SERÁ LANÇADO O RESULTADO DA PESQUISA -->
             </fieldset>
             <!--/FIELDSET-->
           </div>
@@ -511,245 +520,241 @@
     </div>
     <!--/SEGUNDA ABA -->
 
-<!-- TERCEIRA ABA -->
-<div class="tab-pane fade" id="parcelas" role="tabpanel" aria-labelledby="parcelas-tab">
-  <div class="row d-flex justify-content-center">
-    <table class="table table-striped text-center table-borderless table-hover">
-      <thead>
-        <tr>
-          <th colspan="8" scope="col"><h2>Parcelas de Beltrano</h2></th>
-        <tr>
-      </thead>
-      <tbody class="border">
-        <tr>  
-          <th scope="col">Nº Parcela</th>
-          <th scope="col">Vencimento</th>
-          <th scope="col">Valor</th>
-          <th scope="col">Status</th>
-          <th scope="col">Recebido</th>
-          <th scope="col">Mensageiro</th>
-          <th scope="col">Operadora</th>
-          <th scope="col">2ª Via Impressa</th>
-        </tr>
-        <tr>
-          <th>8</th>
-          <td>20/10/2020</td>
-          <td>R$ 60,00</td>
-          <td>Aberta</td>
-          <td>Parcela em aberto!</td>
-          <td>Segundo-mTeste</td>
-          <td>Segundo-mTeste</td>
-          <td>Não</td>
-        </tr>
-        <tr>
-          <th>7</th>
-          <td>20/12/2019</td>
-          <td>R$ 70,00</td>
-          <td>Aberta</td>
-          <td>Parcela em aberto!</td>
-          <td>Segundo-mTeste</td>
-          <td>Segundo-mTeste</td>
-          <td>Não</td>
-        </tr>
-        <tr>
-          <th>6</th>
-          <td>20/11/2019</td>
-          <td>R$ 40,00</td>
-          <td>Aberta</td>
-          <td>Parcela em aberto!</td>
-          <td>Segundo-mTeste</td>
-          <td>Segundo-mTeste</td>
-          <td>Não</td>
-        </tr>
-        <tr>
-          <th>5</th>
-          <td>20/10/2019</td>
-          <td>R$ 80,00</td>
-          <td>Aberta</td>
-          <td>Parcela em aberto!</td>
-          <td>Segundo-mTeste</td>
-          <td>Segundo-mTeste</td>
-          <td>Não</td>
-        </tr>
-      </tbody>
-    </table> 
-    
-      
-  </div><!-- FIM DA DIV FLEX -->
-  <!-- ROW DOS BOTÕES -->
-  <div class="row"> 
-    <div class="col-md-6"><!--BOTAO CONSULTAR PARCELAS ANTERIORES -->
-      <a href="parcelas_anteriores.html"><button type="button" class="btn btn-primary btn-block"><i class="fas fa-list"></i><b> Consultar parcelas anteriores</b>
-      </button></a>
-    </div><!--/CONSULTAR PARCELAS ANTERIORES -->
-    <div class="col-md-6"><!--BOTAO CONSULTAR PARCELAS MIGRAÇÃO -->
-      <a href="parcelas_migracao.html"><button type="button" class="btn btn-success btn-block"><i class="fas fa-list"></i><b> Consultar parcelas migração</b>
-      </button></a>
-    </div><!--/CONSULTAR PARCELAS MIGRAÇÃO -->
-  </div>
-  <!-- /ROW DOS BOTÕES -->
-
-
-</div>
-<!-- /TERCEIRA ABA -->
-
-<!-- QUARTA ABA -->
-<div class="tab-pane fade" id="analise_contrib" role="tabpanel" aria-labelledby="analise_contrib-tab">
-  <div class="row d-flex justify-content-center">
-    <table class="table table-striped text-center table-borderless table-hover">
-      <thead>
-        <tr>
-          <th colspan="6" scope="col"><h2>Análise de contribuinte</h2></th>
-        <tr>
-      </thead>
-      <tbody class="border">
-        <tr>  
-          <th scope="col">Data de Abertura</th>
-          <th scope="col">Código da Análise</th>
-          <th scope="col">Mensageiro</th>
-          <th scope="col">Observação do Mensageiro</th>
-          <th scope="col">Resposta da Análise </th>
-          <th scope="col">Quem Respondeu?</th>
-        </tr>
-        <tr>
-          <th>13/10/2019</th>
-          <td>2</td>
-          <td>Segundo-mTeste</td>
-          <td>Teste do aplicativo</td>
-          <td>Análise ok</td>
-          <td>Coordenadora teste</td>
-        </tr>
-        <tr>
-          <th>11/07/2019</th>
-          <td>1</td>
-          <td>Segundo-mTeste</td>
-          <td>Teste do aplicativo</td>
-          <td>Análise ok</td>
-          <td>Coordenadora teste</td>
-        </tr>
-      </tbody>
-    </table> 
-  </div>
-</div>
-<!-- /QUARTA ABA -->
-
-<!-- QUINTA ABA -->
-<div class="tab-pane fade" id="historico_acoes" role="tabpanel" aria-labelledby="historico_acoes-tab">
-  <div class="row d-flex justify-content-center">
-    <table class="table table-striped text-center table-borderless table-hover">
-      <thead>
-        <tr>
-          <th colspan="4" scope="col"><h2>Histórico de ações</h2></th>
-        <tr>
-      </thead>
-      <tbody class="border">
-        <tr>  
-          <th scope="col">Data da Ação</th>
-          <th scope="col">Hora da Ação</th>
-          <th scope="col">Usuário</th>
-          <th scope="col">Ação</th>
-        </tr>
-        <tr>
-          <th>11/10/2019</th>
-          <td>07:00</td>
-          <td>Operador especial 1</td>
-          <td>Recadastro enviado pela operadora</td>
-        </tr>
-        <tr>
-          <th>10/10/2019</th>
-          <td>17:00</td>
-          <td>Operador especial 1</td>
-          <td>Contribuiu Especial Mensageiro</td>
-        </tr>
-        <tr>
-          <th>10/10/2019</th>
-          <td>15:30</td>
-          <td>Operador especial 2</td>
-          <td>Contribuiu Especial</td>
-        </tr>
-        <tr>
-          <th>10/10/2019</th>
-          <td>13:30</td>
-          <td>Operador especial 3</td>
-          <td>Atualizou os dados do contribuinte</td>
-        </tr>
-      </tbody>
-    </table> 
-  </div><!-- FIM DA DIV FLEX -->
-  
-  <!--BOTAO CONSULTAR AÇÕES ANTERIORES -->
-  <div class="row">
-    <div class="col-md-12">
-      <a href="acoes_anteriores.html"><button type="button" class="btn btn-primary btn-block"><i class="fas fa-list"></i><b> Consultar ações anteriores</b>
-      </button></a>
-    </div>
-  </div>  
-  <!--/BOTAO CONSULTAR AÇÕES ANTERIORES -->
-</div>
-<!-- /QUINTA ABA -->
-
-<!-- SEXTA ABA -->
-<div class="tab-pane fade" id="botoes_menu" role="tabpanel" aria-labelledby="botoes_menu-tab">
-  <div class="row">
-    <button type="button" class="btn btn-light btn-lg btn-block"><i class="fas fa-plus"></i> Gerar nova parcela</button>
-    <button type="button" class="btn btn-outline-secondary btn-lg btn-block"><i class="fas fa-plus"></i> Gerar parcelas campanha de natal</button>
-    <button type="button" class="btn btn-light btn-lg btn-block"><i class="fas fa-file-invoice"></i> Lançar boleto</button>
-    <button type="button" class="btn btn-outline-secondary btn-lg btn-block"><i class="fas fa-list"></i> Informações discadora</button>
-    <button type="button" class="btn btn-light btn-lg btn-block"><i class="fas fa-list"></i> Declarar I.R.</button>
-    <button type="button" class="btn btn-outline-secondary btn-lg btn-block"><i class="fas fa-dollar-sign"></i> Gerar parcela depósito</button>
-    <button type="button" class="btn btn-light btn-lg btn-block"><i class="fas fa-sync-alt"></i> Reprocessar doações</button>
-    <button type="button" class="btn btn-outline-secondary btn-lg btn-block"><i class="fas fa-sign-in-alt"></i> Enviar para recadastro</button>
-  </div>
-</div>
-<!-- /SEXTA ABA -->
-
-<!-- SÉTIMA ABA -->
-<div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
-  <div class="row">
-    <div class="align-items-center">
-      <h2>Perguntas frequentes</h2>
-      <br>
-      Caso esteja com uma dúvida que não consta em nosso FAQ, entre em contato conosco!
-      <br>
-      Nosso telefone: (11)11111-1111 / E-mail: exemplo@provedor.com <br> <br>
-    </div>
-    
-    <div class="input-group mb-3"><!-- DIV DA BARRA DE PESQUISA -->
-      <input type="text" class="form-control" placeholder="Digite sua dúvida" aria-label="Digite sua duvida" aria-describedby="button-addon2">
-      <div class="input-group-append">
-        <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+    <!-- TERCEIRA ABA -->
+    <div class="tab-pane fade" id="parcelas" role="tabpanel" aria-labelledby="parcelas-tab">
+      <div class="row d-flex justify-content-center">
+        <table class="table table-striped text-center table-borderless table-hover">
+          <thead>
+            <tr>
+              <th colspan="8" scope="col"><h2>Parcelas de Beltrano</h2></th>
+            <tr>
+          </thead>
+          <tbody class="border">
+            <tr>  
+              <th scope="col">Nº Parcela</th>
+              <th scope="col">Vencimento</th>
+              <th scope="col">Valor</th>
+              <th scope="col">Status</th>
+              <th scope="col">Recebido</th>
+              <th scope="col">Mensageiro</th>
+              <th scope="col">Operadora</th>
+              <th scope="col">2ª Via Impressa</th>
+            </tr>
+            <tr>
+              <th>8</th>
+              <td>20/10/2020</td>
+              <td>R$ 60,00</td>
+              <td>Aberta</td>
+              <td>Parcela em aberto!</td>
+              <td>Segundo-mTeste</td>
+              <td>Segundo-mTeste</td>
+              <td>Não</td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td>20/12/2019</td>
+              <td>R$ 70,00</td>
+              <td>Aberta</td>
+              <td>Parcela em aberto!</td>
+              <td>Segundo-mTeste</td>
+              <td>Segundo-mTeste</td>
+              <td>Não</td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td>20/11/2019</td>
+              <td>R$ 40,00</td>
+              <td>Aberta</td>
+              <td>Parcela em aberto!</td>
+              <td>Segundo-mTeste</td>
+              <td>Segundo-mTeste</td>
+              <td>Não</td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td>20/10/2019</td>
+              <td>R$ 80,00</td>
+              <td>Aberta</td>
+              <td>Parcela em aberto!</td>
+              <td>Segundo-mTeste</td>
+              <td>Segundo-mTeste</td>
+              <td>Não</td>
+            </tr>
+          </tbody>
+        </table> 
+      </div><!-- FIM DA DIV FLEX -->
+      <!-- ROW DOS BOTÕES -->
+      <div class="row"> 
+        <div class="col-md-6"><!--BOTAO CONSULTAR PARCELAS ANTERIORES -->
+          <a href="parcelas_anteriores.html"><button type="button" class="btn btn-primary btn-block"><i class="fas fa-list"></i><b> Consultar parcelas anteriores</b>
+          </button></a>
+        </div><!--/CONSULTAR PARCELAS ANTERIORES -->
+        <div class="col-md-6"><!--BOTAO CONSULTAR PARCELAS MIGRAÇÃO -->
+          <a href="parcelas_migracao.html"><button type="button" class="btn btn-success btn-block"><i class="fas fa-list"></i><b> Consultar parcelas migração</b>
+          </button></a>
+        </div><!--/CONSULTAR PARCELAS MIGRAÇÃO -->
       </div>
-    </div><!-- /DIV DA BARRA DE PESQUISA -->
+      <!-- /ROW DOS BOTÕES -->
+    </div>
+    <!-- /TERCEIRA ABA -->
 
-    <table class="table table-striped table-hover border">
-      <tbody>
-        <tr>
-          <th>Como gerar uma nova parcela?</th>
-        </tr>
-        <tr>
-          <td>Para gerar uma nova parcela, basta clicar em...</td>
-        </tr>
-        <tr>
-          <th>Como consultar parcelas de migração?</th>
-        </tr>
-        <tr>
-          <td>Para consultar parcelas de migração, clique na aba...</td>
-        </tr>
-        <tr>
-          <th>
-            Como validar retorno?
-          </th>
-        </tr>
-        <tr>
-          <td>
-            Para validar retorno, clique na aba...
-          </td>
-        </tr>
-      </tbody>
-    </table>  
-  </div>
-</div>  
-<!-- SÉTIMA ABA -->
+    <!-- QUARTA ABA -->
+    <div class="tab-pane fade" id="analise_contrib" role="tabpanel" aria-labelledby="analise_contrib-tab">
+      <div class="row d-flex justify-content-center">
+        <table class="table table-striped text-center table-borderless table-hover">
+          <thead>
+            <tr>
+              <th colspan="6" scope="col"><h2>Análise de contribuinte</h2></th>
+            <tr>
+          </thead>
+          <tbody class="border">
+            <tr>  
+              <th scope="col">Data de Abertura</th>
+              <th scope="col">Código da Análise</th>
+              <th scope="col">Mensageiro</th>
+              <th scope="col">Observação do Mensageiro</th>
+              <th scope="col">Resposta da Análise </th>
+              <th scope="col">Quem Respondeu?</th>
+            </tr>
+            <tr>
+              <th>13/10/2019</th>
+              <td>2</td>
+              <td>Segundo-mTeste</td>
+              <td>Teste do aplicativo</td>
+              <td>Análise ok</td>
+              <td>Coordenadora teste</td>
+            </tr>
+            <tr>
+              <th>11/07/2019</th>
+              <td>1</td>
+              <td>Segundo-mTeste</td>
+              <td>Teste do aplicativo</td>
+              <td>Análise ok</td>
+              <td>Coordenadora teste</td>
+            </tr>
+          </tbody>
+        </table> 
+      </div>
+    </div>
+    <!-- /QUARTA ABA -->
+
+    <!-- QUINTA ABA -->
+    <div class="tab-pane fade" id="historico_acoes" role="tabpanel" aria-labelledby="historico_acoes-tab">
+      <div class="row d-flex justify-content-center">
+        <table class="table table-striped text-center table-borderless table-hover">
+          <thead>
+            <tr>
+              <th colspan="4" scope="col"><h2>Histórico de ações</h2></th>
+            <tr>
+          </thead>
+          <tbody class="border">
+            <tr>  
+              <th scope="col">Data da Ação</th>
+              <th scope="col">Hora da Ação</th>
+              <th scope="col">Usuário</th>
+              <th scope="col">Ação</th>
+            </tr>
+            <tr>
+              <th>11/10/2019</th>
+              <td>07:00</td>
+              <td>Operador especial 1</td>
+              <td>Recadastro enviado pela operadora</td>
+            </tr>
+            <tr>
+              <th>10/10/2019</th>
+              <td>17:00</td>
+              <td>Operador especial 1</td>
+              <td>Contribuiu Especial Mensageiro</td>
+            </tr>
+            <tr>
+              <th>10/10/2019</th>
+              <td>15:30</td>
+              <td>Operador especial 2</td>
+              <td>Contribuiu Especial</td>
+            </tr>
+            <tr>
+              <th>10/10/2019</th>
+              <td>13:30</td>
+              <td>Operador especial 3</td>
+              <td>Atualizou os dados do contribuinte</td>
+            </tr>
+          </tbody>
+        </table> 
+      </div><!-- FIM DA DIV FLEX -->
+      
+      <!--BOTAO CONSULTAR AÇÕES ANTERIORES -->
+      <div class="row">
+        <div class="col-md-12">
+          <a href="acoes_anteriores.html"><button type="button" class="btn btn-primary btn-block"><i class="fas fa-list"></i><b> Consultar ações anteriores</b>
+          </button></a>
+        </div>
+      </div>  
+      <!--/BOTAO CONSULTAR AÇÕES ANTERIORES -->
+    </div>
+    <!-- /QUINTA ABA -->
+
+    <!-- SEXTA ABA -->
+    <div class="tab-pane fade" id="botoes_menu" role="tabpanel" aria-labelledby="botoes_menu-tab">
+      <div class="row">
+        <button type="button" class="btn btn-light btn-lg btn-block"><i class="fas fa-plus"></i> Gerar nova parcela</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"><i class="fas fa-plus"></i> Gerar parcelas campanha de natal</button>
+        <button type="button" class="btn btn-light btn-lg btn-block"><i class="fas fa-file-invoice"></i> Lançar boleto</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"><i class="fas fa-list"></i> Informações discadora</button>
+        <button type="button" class="btn btn-light btn-lg btn-block"><i class="fas fa-list"></i> Declarar I.R.</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"><i class="fas fa-dollar-sign"></i> Gerar parcela depósito</button>
+        <button type="button" class="btn btn-light btn-lg btn-block"><i class="fas fa-sync-alt"></i> Reprocessar doações</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"><i class="fas fa-sign-in-alt"></i> Enviar para recadastro</button>
+      </div>
+    </div>
+    <!-- /SEXTA ABA -->
+
+    <!-- SÉTIMA ABA -->
+    <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+      <div class="row">
+        <div class="align-items-center">
+          <h2>Perguntas frequentes</h2>
+          <br>
+          Caso esteja com uma dúvida que não consta em nosso FAQ, entre em contato conosco!
+          <br>
+          Nosso telefone: (11)11111-1111 / E-mail: exemplo@provedor.com <br> <br>
+        </div>
+        
+        <div class="input-group mb-3"><!-- DIV DA BARRA DE PESQUISA -->
+          <input type="text" class="form-control" placeholder="Digite sua dúvida" aria-label="Digite sua duvida" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+          </div>
+        </div><!-- /DIV DA BARRA DE PESQUISA -->
+
+        <table class="table table-striped table-hover border">
+          <tbody>
+            <tr>
+              <th>Como gerar uma nova parcela?</th>
+            </tr>
+            <tr>
+              <td>Para gerar uma nova parcela, basta clicar em...</td>
+            </tr>
+            <tr>
+              <th>Como consultar parcelas de migração?</th>
+            </tr>
+            <tr>
+              <td>Para consultar parcelas de migração, clique na aba...</td>
+            </tr>
+            <tr>
+              <th>
+                Como validar retorno?
+              </th>
+            </tr>
+            <tr>
+              <td>
+                Para validar retorno, clique na aba...
+              </td>
+            </tr>
+          </tbody>
+        </table>  
+      </div>
+    </div>  
+    <!-- SÉTIMA ABA -->
 
 </div><!--/MyTabContent FIM-->
 </div><!--CONTAINER -->
