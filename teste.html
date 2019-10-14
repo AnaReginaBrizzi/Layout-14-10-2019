@@ -130,7 +130,7 @@
                 </tr>    
               </tbody>
           </table>
-          <button type="button" style="width: 100%" class="btn btn-info">Validar retorno</button> 
+          <button type="button" style="width: 100%" class="btn btn-info"><i class="fas fa-check"></i> Validar retorno</button> 
 
           <table class="table mt-5 border">
             <thead class="thead-light">
@@ -517,7 +517,7 @@
     <table class="table table-striped text-center border">
       <thead>
         <tr>
-          <th colspan="8" scope="col"><h2>Parcelas de Beltrano</h2></th>
+          <th colspan="8" scope="col"><h2><a href="#Parcelas">Parcelas de Beltrano</a></h2></th>
         <tr>
       </thead>
       <tbody>
@@ -574,18 +574,22 @@
       </tbody>
     </table> 
     
-    
-      <!--BOTAO CONSULTAR PARCELAS ANTERIORES -->
-        <button type="button" style="width: 50%" class="btn btn-primary">
-          <i class="fas fa-list"></i><b> Consultar parcelas anteriores</b>
-        </button>
-      <!--/CONSULTAR PARCELAS ANTERIORES -->
-      <!--BOTAO CONSULTAR PARCELAS MIGRAÇÃO -->
-        <button type="button" style="width: 50%" class="btn btn-success">
-          <i class="fas fa-list"></i><b> Consultar parcelas migração</b>
-        </button>
-      <!--/CONSULTAR PARCELAS MIGRAÇÃO -->
-    </div>
+      
+  </div><!-- FIM DA DIV FLEX -->
+  <!-- ROW DOS BOTÕES -->
+  <div class="row"> 
+    <div class="col-md-6"><!--BOTAO CONSULTAR PARCELAS ANTERIORES -->
+      <a href="parcelas_anteriores.html"><button type="button" class="btn btn-primary btn-block"><i class="fas fa-list"></i><b> Consultar parcelas anteriores</b>
+      </button></a>
+    </div><!--/CONSULTAR PARCELAS ANTERIORES -->
+    <div class="col-md-6"><!--BOTAO CONSULTAR PARCELAS MIGRAÇÃO -->
+      <a href="parcelas_migracao.html"><button type="button" class="btn btn-success btn-block"><i class="fas fa-list"></i><b> Consultar parcelas migração</b>
+      </button></a>
+    </div><!--/CONSULTAR PARCELAS MIGRAÇÃO -->
+  </div>
+  <!-- /ROW DOS BOTÕES -->
+
+
 </div>
 <!-- /TERCEIRA ABA -->
 
@@ -671,12 +675,16 @@
         </tr>
       </tbody>
     </table> 
-    <!--BOTAO CONSULTAR AÇÕES ANTERIORES -->
-    <button type="button" style="width: 100%" class="btn btn-primary">
-      <i class="fas fa-list"></i><b> Consultar ações anteriores</b>
-    </button>
-    <!--/BOTAO CONSULTAR AÇÕES ANTERIORES -->
-  </div>
+  </div><!-- FIM DA DIV FLEX -->
+  
+  <!--BOTAO CONSULTAR AÇÕES ANTERIORES -->
+  <div class="row">
+    <div class="col-md-12">
+      <a href="acoes_anteriores.html"><button type="button" class="btn btn-primary btn-block"><i class="fas fa-list"></i><b> Consultar ações anteriores</b>
+      </button></a>
+    </div>
+  </div>  
+  <!--/BOTAO CONSULTAR AÇÕES ANTERIORES -->
 </div>
 <!-- /QUINTA ABA -->
 
